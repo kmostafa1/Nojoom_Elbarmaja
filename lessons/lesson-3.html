@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture 3: Interactive Content: Images, Links, Buttons, and Tables</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+</head>
+<body>
+  <header class="lesson-hero">
+    <div class="header-inner">
+      <div class="breadcrumb"><a href="../index.html">Home</a> / Lecture 3</div>
+      <span class="badge">HTML-led + Element Styling</span>
+      <div class="lesson-title-row">
+        <h1>Lecture 3: Interactive Content: Images, Links, Buttons, and Tables</h1>
+        <span class="suggested-total-badge"><span class="time-label">Estimated time</span><strong>80 min</strong></span>
+      </div>
+      <p>Add richer HTML content, then style images, buttons, and tables.</p>
+      <div class="header-actions">
+        <a class="btn btn-secondary" href="lesson-2.html">Previous</a>
+        <a class="btn btn-primary" href="#material">Start Lesson</a>
+        <a class="btn btn-secondary" href="lesson-4.html">Next</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="lesson-layout">
+    <section class="lesson-section" id="material">
+      <h2>Learning Objectives</h2>
+      <ul class="clean"><li>Add images using src, alt, and width.</li>
+<li>Create hyperlinks using a and href.</li>
+<li>Add buttons as HTML page elements.</li>
+<li>Build tables using table, tr, th, and td.</li>
+<li>Style buttons, images, and table cells with CSS.</li></ul>
+
+      <div class="focus-box">
+        <div>
+          <h3>HTML Focus</h3>
+          <p>Images, links, buttons, and tables</p>
+        </div>
+        <div>
+          <h3>CSS Focus</h3>
+          <p>Button style, image size, table borders</p>
+        </div>
+        <div>
+          <h3>JavaScript Focus</h3>
+          <p>Not introduced yet</p>
+        </div>
+      </div>
+
+      <div class="lesson-meta"><span class="pill hintable" tabindex="0" data-hint="HTML image tag. Adds a picture to the page.">img</span>
+<span class="pill hintable" tabindex="0" data-hint="Text that describes an image for accessibility and when an image cannot load.">alt text</span>
+<span class="pill hintable" tabindex="0" data-hint="HTML link. The href attribute stores the destination URL.">a href</span>
+<span class="pill hintable" tabindex="0" data-hint="Clickable HTML element. CSS styles it; JavaScript can make it do actions.">button</span>
+<span class="pill hintable" tabindex="0" data-hint="HTML element for information arranged in rows and columns.">table</span>
+<span class="pill hintable" tabindex="0" data-hint="Table row.">tr</span>
+<span class="pill hintable" tabindex="0" data-hint="Table header cell.">th</span>
+<span class="pill hintable" tabindex="0" data-hint="Table data cell.">td</span>
+<span class="pill hintable" tabindex="0" data-hint="The line around an element.">border</span>
+<span class="pill hintable" tabindex="0" data-hint="Space inside an element between content and border.">padding</span></div>
+      <p class="hint-note">Hover over each concept pill to see a quick hint. You can also tab to a pill using the keyboard.</p>
+    </section>
+    <section class="lesson-section">
+      <h2>Flip Vocabulary Cards</h2>
+      <p>Click or hover each card to reveal the meaning.</p>
+      <div class="vocab-grid">
+        
+        
+        <button class="vocab-card" type="button" aria-label="Flip vocabulary card: Image">
+          <span class="vocab-card-inner">
+            <span class="vocab-card-front">
+<strong>Image</strong>
+</span>
+            <span class="vocab-card-back">
+              <small>Meaning</small>
+              <strong>Image</strong>
+              <span>A picture added to a webpage using the img tag.</span>
+            </span>
+          </span>
+        </button>
+        
+        <button class="vocab-card" type="button" aria-label="Flip vocabulary card: Alt text">
+          <span class="vocab-card-inner">
+            <span class="vocab-card-front">
+<strong>Alt text</strong>
+</span>
+            <span class="vocab-card-back">
+              <small>Meaning</small>
+              <strong>Alt text</strong>
+              <span>Text that describes an image for accessibility.</span>
+            </span>
+          </span>
+        </button>
+        
+        <button class="vocab-card" type="button" aria-label="Flip vocabulary card: Link">
+          <span class="vocab-card-inner">
+            <span class="vocab-card-front">
+<strong>Link</strong>
+</span>
+            <span class="vocab-card-back">
+              <small>Meaning</small>
+              <strong>Link</strong>
+              <span>A clickable element that opens another page or website.</span>
+            </span>
+          </span>
+        </button>
+        
+        <button class="vocab-card" type="button" aria-label="Flip vocabulary card: Table">
+          <span class="vocab-card-inner">
+            <span class="vocab-card-front">
+<strong>Table</strong>
+</span>
+            <span class="vocab-card-back">
+              <small>Meaning</small>
+              <strong>Table</strong>
+              <span>A structure for showing information in rows and columns.</span>
+            </span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <section class="lesson-section">
+      <div class="safety-note">
+        <h3>Safety Note for Children</h3>
+        <p>This lesson may include personal text, images, or links. Keep your webpage safe.</p>
+        <ul>
+          <li>Do not put your home address, phone number, school address, or private personal details on a webpage.</li>
+<li>Use an avatar, drawing, icon, or safe sample image instead of a real personal photo unless an adult approves.</li>
+<li>Use copyright-safe images or images provided by the teacher.</li>
+<li>Ask an adult before publishing any webpage online.</li>
+<li>Be kind and respectful. Do not write content that could hurt, embarrass, or expose another person.</li>
+<li>Do not copy code from unknown websites without teacher guidance.</li>
+        </ul>
+      </div>
+    </section>
+<section class="lesson-section">
+      <h2>Training Material</h2>
+      <p>Each lesson separates structure, design, and interaction: HTML controls what is on the page, CSS controls how it looks, and JavaScript controls how it behaves.</p>
+      <div class="download-panel">
+        <h3>Download Training Files</h3>
+        <p>Download one ZIP file containing the HTML, CSS, and JavaScript examples for this lesson.</p>
+        <div class="download-actions">
+          <a class="download-btn" download href="../downloads/lesson-3/lesson-3-training-files.zip">Download Example</a>
+          <a class="download-btn worksheet-download" href="../worksheets/worksheet-3.html">Worksheet</a>
+        </div>
+      </div>
+
+      <div class="code-grid">
+        
+<div class="code-block">
+  <div class="code-title">
+    <span>HTML Example</span>
+    <button class="copy-btn" data-copy-target="html-code-3">Copy code</button>
+  </div>
+<pre><code id="html-code-3">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;My Weekly Schedule&lt;/title&gt;
+
+  &lt;!-- External CSS file --&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+
+  &lt;!-- External JS file --&gt;
+  &lt;script src=&quot;script.js&quot; defer&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;My Weekly Schedule&lt;/h1&gt;
+
+  &lt;img src=&quot;images/profile.png&quot; alt=&quot;Profile avatar&quot; width=&quot;200&quot;&gt;
+
+  &lt;table&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Day&lt;/th&gt;
+      &lt;th&gt;Activity&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Monday&lt;/td&gt;
+      &lt;td&gt;Football Practice&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Tuesday&lt;/td&gt;
+      &lt;td&gt;Reading&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+
+  &lt;a href=&quot;https://www.wikipedia.org&quot;&gt;Visit Wikipedia&lt;/a&gt;
+  &lt;button&gt;Click Me&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+
+        
+<div class="code-block">
+  <div class="code-title">
+    <span>CSS Example</span>
+    <button class="copy-btn" data-copy-target="css-code-3">Copy code</button>
+  </div>
+  <pre><code id="css-code-3">img {
+  border-radius: 16px;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 2px solid #4f46e5;
+  padding: 10px;
+}
+
+button {
+  background-color: #312e81;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+}</code></pre>
+</div>
+
+        
+<div class="code-block">
+  <div class="code-title">
+    <span>JavaScript Example</span>
+    <button class="copy-btn" data-copy-target="js-code-3">Copy code</button>
+  </div>
+  <pre><code id="js-code-3">// In this lesson, the button is only an HTML element.
+// JavaScript will make buttons do actions later.</code></pre>
+</div>
+
+      </div>
+    </section>
+<section class="lesson-section">
+      <h2>Guided Activity</h2>
+      <div class="project-card">
+        <p><strong>Task:</strong> Create a My Weekly Schedule page with an image, link, button, and schedule table. Then style the table and button.</p>
+        <p><strong>Challenge:</strong> Create a Favorite Characters table and apply a unique border color.</p>
+      </div>
+    </section>
+<section class="lesson-section">
+      <div class="build-steps">
+        <h3>Build Steps</h3>
+        <p>Follow these steps to complete the lesson in a clear order.</p>
+        <ol>
+          <li>Add a page heading.</li>
+<li>Insert an image with src, alt, and width.</li>
+<li>Create a table with headers and at least two rows.</li>
+<li>Add a link and a button.</li>
+<li>Style the image, table, and button with CSS.</li>
+<li>Test the link and check that all table rows display correctly.</li>
+        </ol>
+      </div>
+    </section>
+<section class="lesson-section">
+      <div class="try-change">
+        <h3>Try This Change</h3>
+        <p>Make one small change, refresh the page, and observe what happens.</p>
+        <ul class="try-list">
+          <li>Change the button background color.</li>
+<li>Add another row to the table.</li>
+<li>Change the image width to 150 or 250.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="lesson-section">
+      <div class="level-up">
+        <h3>Level Up Tasks</h3>
+        <p>Finished early? Try one of these extra challenges.</p>
+        <ul class="level-up-list">
+          <li>Add two images and give each one a different width.</li>
+<li>Create a table with at least four rows.</li>
+<li>Style the button with hover effect using CSS.</li>
+        </ul>
+      </div>
+    </section>
+
+<section class="lesson-section">
+      <div class="debug-corner">
+        <h3>Debugging Corner</h3>
+        <p>Use this checklist when something does not work as expected.</p>
+        <table class="debug-table">
+          <thead>
+            <tr>
+              <th>Problem</th>
+              <th>Possible Reason</th>
+              <th>Fix</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          <tr>
+            <td>Image does not load</td>
+            <td>The image path or filename may be wrong.</td>
+            <td>Check spelling, folder name, and file extension.</td>
+          </tr>
+          <tr>
+            <td>Link does not open</td>
+            <td>href may be missing or incorrect.</td>
+            <td>Add a valid URL inside href.</td>
+          </tr>
+          <tr>
+            <td>Table layout is broken</td>
+            <td>tr, th, or td tags may be missing.</td>
+            <td>Check rows first, then cells inside each row.</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+<section class="lesson-section">
+      <h2>Student Checklist</h2>
+      <p data-progress-label="lesson-3">0% complete</p>
+      <div class="progress" data-progress-for="lesson-3"><span></span></div>
+      <div data-checklist="lesson-3" style="margin-top:16px">
+        <label><input type='checkbox'> Understand the HTML focus.</label><br>
+<label><input type='checkbox'> Understand the CSS focus.</label><br>
+<label><input type='checkbox'> Understand the JavaScript focus.</label><br>
+<label><input type='checkbox'> Run or copy the HTML example.</label><br>
+<label><input type='checkbox'> Run or copy the CSS example.</label><br>
+<label><input type='checkbox'> Run or review the JavaScript example.</label><br>
+<label><input type='checkbox'> Complete the guided activity.</label><br>
+<label><input type='checkbox'> Finish the challenge.</label><br>
+      </div>
+    </section>
+
+    <section class="lesson-section" data-quiz>
+      <h2>Challenge</h2>
+      <p><strong>Which HTML attribute describes an image?</strong></p>
+      <button class='quiz-option' data-quiz-answer='true'>alt</button>
+<button class='quiz-option' data-quiz-answer='false'>border</button>
+<button class='quiz-option' data-quiz-answer='false'>font</button>
+      <p class="quiz-result"></p>
+    </section>
+
+    <section class="lesson-section">
+      <h2>Instructor Notes</h2>
+      <ul class="clean">
+        <li>Keep the teaching rule visible: HTML is structure, CSS is design, JavaScript is behavior.</li>
+        <li>Lesson 8 introduces JavaScript only as a small sneak peek using inline onclick examples.</li>
+        <li>From Lesson 9 onward, JavaScript becomes a full programming topic.</li>
+        <li>Encourage students to test often and explain what each line does in their own words.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Web Development Learning Portal · Lecture 3
+  </footer>
+
+  <script src="../assets/script.js"></script>
+</body>
+</html>

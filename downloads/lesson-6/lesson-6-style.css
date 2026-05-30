@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+.card {
+  width: 260px;
+  padding: 24px;
+  margin: 20px;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.card-icon {
+  font-size: 50px;
+}

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture 7: Flexbox Card Gallery</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+</head>
+<body>
+  <header class="lesson-hero">
+    <div class="header-inner">
+      <div class="breadcrumb"><a href="../index.html">Home</a> / Lecture 7</div>
+      <span class="badge">CSS-led + Responsive Layout</span>
+      <div class="lesson-title-row">
+        <h1>Lecture 7: Flexbox Card Gallery</h1>
+        <span class="suggested-total-badge"><span class="time-label">Estimated time</span><strong>80 min</strong></span>
+      </div>
+      <p>Arrange multiple cards in a flexible responsive gallery using Flexbox.</p>
+      <div class="header-actions">
+        <a class="btn btn-secondary" href="lesson-6.html">Previous</a>
+        <a class="btn btn-primary" href="#material">Start Lesson</a>
+        <a class="btn btn-secondary" href="lesson-8.html">Next</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="lesson-layout">
+    <section class="lesson-section" id="material">
+      <h2>Learning Objectives</h2>
+      <ul class="clean"><li>Use display: flex on a card container.</li>
+<li>Use justify-content and align-items.</li>
+<li>Use gap for clean spacing.</li>
+<li>Use flex-wrap to support smaller screens.</li>
+<li>Build a responsive card gallery.</li></ul>
+
+      <div class="focus-box">
+        <div>
+          <h3>HTML Focus</h3>
+          <p>Multiple card sections inside a container</p>
+        </div>
+        <div>
+          <h3>CSS Focus</h3>
+          <p>Flexbox layout, gap, wrapping, alignment</p>
+        </div>
+        <div>
+          <h3>JavaScript Focus</h3>
+          <p>Not introduced yet</p>
+        </div>
+      </div>
+
+      <div class="lesson-meta"><span class="pill hintable" tabindex="0" data-hint="CSS declaration that activates Flexbox layout.">display: flex</span>
+<span class="pill hintable" tabindex="0" data-hint="Flexbox property for horizontal distribution.">justify-content</span>
+<span class="pill hintable" tabindex="0" data-hint="Flexbox property for vertical alignment.">align-items</span>
+<span class="pill hintable" tabindex="0" data-hint="CSS property that creates spacing between items.">gap</span>
+<span class="pill hintable" tabindex="0" data-hint="Flexbox property that allows items to move to a new row.">flex-wrap</span>
+<span class="pill hintable" tabindex="0" data-hint="A wrapper that holds multiple card elements.">card-container</span>
+<span class="pill hintable" tabindex="0" data-hint="A layout that adapts to different screen sizes.">responsive layout</span>
+<span class="pill hintable" tabindex="0" data-hint="CSS rule used to apply styles only at certain screen sizes or conditions.">@media</span></div>
+      <p class="hint-note">Hover over each concept pill to see a quick hint. You can also tab to a pill using the keyboard.</p>
+    </section>
+    <section class="lesson-section">
+      <h2>Flip Vocabulary Cards</h2>
+      <p>Click or hover each card to reveal the meaning.</p>
+      <div class="vocab-grid">
+        
+        
+        <button class="vocab-card" type="button" aria-label="Flip vocabulary card: Flexbox">
+          <span class="vocab-card-inner">
+            <span class="vocab-card-front">
+<strong>Flexbox</strong>
+</span>
+            <span class="vocab-card-back">
+              <small>Meaning</small>
+              <strong>Flexbox</strong>
+              <span>A CSS layout system for arranging items in rows or columns.</span>
+            </span>
+          </span>
+        </button>
+        
+        <button class="vocab-card" type="button" aria-label="Flip vocabulary card: Container">
+          <span class="vocab-card-inner">
+            <span class="vocab-card-front">
+<strong>Container</strong>
+</span>
+            <span class="vocab-card-back">
+              <small>Meaning</small>
+              <strong>Container</strong>
+              <span>The parent element that holds other elements.</span>
+            </span>
+          </span>
+        </button>
+        
+        <button class="vocab-card" type="button" aria-label="Flip vocabulary card: Gap">
+          <span class="vocab-card-inner">
+            <span class="vocab-card-front">
+<strong>Gap</strong>
+</span>
+            <span class="vocab-card-back">
+              <small>Meaning</small>
+              <strong>Gap</strong>
+              <span>The space between layout items.</span>
+            </span>
+          </span>
+        </button>
+        
+        <button class="vocab-card" type="button" aria-label="Flip vocabulary card: Responsive">
+          <span class="vocab-card-inner">
+            <span class="vocab-card-front">
+<strong>Responsive</strong>
+</span>
+            <span class="vocab-card-back">
+              <small>Meaning</small>
+              <strong>Responsive</strong>
+              <span>A design that adapts to different screen sizes.</span>
+            </span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <section class="lesson-section">
+      <div class="safety-note">
+        <h3>Safety Note for Children</h3>
+        <p>This lesson may include personal text, images, or links. Keep your webpage safe.</p>
+        <ul>
+          <li>Do not put your home address, phone number, school address, or private personal details on a webpage.</li>
+<li>Use an avatar, drawing, icon, or safe sample image instead of a real personal photo unless an adult approves.</li>
+<li>Use copyright-safe images or images provided by the teacher.</li>
+<li>Ask an adult before publishing any webpage online.</li>
+<li>Be kind and respectful. Do not write content that could hurt, embarrass, or expose another person.</li>
+<li>Do not copy code from unknown websites without teacher guidance.</li>
+        </ul>
+      </div>
+    </section>
+<section class="lesson-section">
+      <h2>Training Material</h2>
+      <p>Each lesson separates structure, design, and interaction: HTML controls what is on the page, CSS controls how it looks, and JavaScript controls how it behaves.</p>
+      <div class="download-panel">
+        <h3>Download Training Files</h3>
+        <p>Download one ZIP file containing the HTML, CSS, and JavaScript examples for this lesson.</p>
+        <div class="download-actions">
+          <a class="download-btn" download href="../downloads/lesson-7/lesson-7-training-files.zip">Download Example</a>
+          <a class="download-btn worksheet-download" href="../worksheets/worksheet-7.html">Worksheet</a>
+        </div>
+      </div>
+
+      <div class="code-grid">
+        
+<div class="code-block">
+  <div class="code-title">
+    <span>HTML Example</span>
+    <button class="copy-btn" data-copy-target="html-code-7">Copy code</button>
+  </div>
+<pre><code id="html-code-7">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Flexbox Card Gallery&lt;/title&gt;
+
+  &lt;!-- External CSS file --&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+
+  &lt;!-- External JS file --&gt;
+  &lt;script src=&quot;script.js&quot; defer&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;main class=&quot;card-container&quot;&gt;
+    &lt;section class=&quot;card&quot;&gt;🐉 Fire Dragon&lt;/section&gt;
+    &lt;section class=&quot;card&quot;&gt;🧙 Wise Wizard&lt;/section&gt;
+    &lt;section class=&quot;card&quot;&gt;⚔️ Brave Knight&lt;/section&gt;
+    &lt;section class=&quot;card&quot;&gt;📚 Book Guardian&lt;/section&gt;
+  &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+
+        
+<div class="code-block">
+  <div class="code-title">
+    <span>CSS Example</span>
+    <button class="copy-btn" data-copy-target="css-code-7">Copy code</button>
+  </div>
+  <pre><code id="css-code-7">.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+.card {
+  width: 240px;
+  padding: 20px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+}</code></pre>
+</div>
+
+        
+<div class="code-block">
+  <div class="code-title">
+    <span>JavaScript Example</span>
+    <button class="copy-btn" data-copy-target="js-code-7">Copy code</button>
+  </div>
+  <pre><code id="js-code-7">// This lesson focuses on Flexbox layout.</code></pre>
+</div>
+
+      </div>
+    </section>
+<section class="lesson-section">
+      <h2>Guided Activity</h2>
+      <div class="project-card">
+        <p><strong>Task:</strong> Build a gallery with at least four cards inspired by a game, book, sport, or fantasy world.</p>
+        <p><strong>Challenge:</strong> Make the layout work on narrow screens by using flex-wrap.</p>
+      </div>
+    </section>
+    <section class="lesson-section" data-added="must-add-7">
+      <h2>Responsive Design with @media</h2>
+      <p>Use <code>@media</code> to change styles for different screen sizes. This helps the card layout work on phones and tablets.</p>
+    </section>
+
+<section class="lesson-section">
+      <div class="build-steps">
+        <h3>Build Steps</h3>
+        <p>Follow these steps to complete the lesson in a clear order.</p>
+        <ol>
+          <li>Create a card container.</li>
+<li>Place multiple card sections inside the container.</li>
+<li>Add display: flex to the container.</li>
+<li>Use gap, justify-content, align-items, and flex-wrap.</li>
+<li>Resize the browser window to test wrapping.</li>
+<li>Improve spacing and alignment.</li>
+        </ol>
+      </div>
+    </section>
+<section class="lesson-section">
+      <div class="try-change">
+        <h3>Try This Change</h3>
+        <p>Make one small change, refresh the page, and observe what happens.</p>
+        <ul class="try-list">
+          <li>Change justify-content to space-around and compare the layout.</li>
+<li>Increase the gap between cards.</li>
+<li>Add two more cards and check if the layout wraps.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="lesson-section">
+      <div class="level-up">
+        <h3>Level Up Tasks</h3>
+        <p>Finished early? Try one of these extra challenges.</p>
+        <ul class="level-up-list">
+          <li>Add six cards and test how they wrap on a small screen.</li>
+<li>Try different justify-content values and compare the layout.</li>
+<li>Create a centered card gallery with a title and subtitle.</li>
+        </ul>
+      </div>
+    </section>
+
+<section class="lesson-section">
+      <div class="debug-corner">
+        <h3>Debugging Corner</h3>
+        <p>Use this checklist when something does not work as expected.</p>
+        <table class="debug-table">
+          <thead>
+            <tr>
+              <th>Problem</th>
+              <th>Possible Reason</th>
+              <th>Fix</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          <tr>
+            <td>Cards are stacked only vertically</td>
+            <td>display: flex may be missing on the container.</td>
+            <td>Add display: flex to the card container.</td>
+          </tr>
+          <tr>
+            <td>Cards overflow on small screens</td>
+            <td>flex-wrap may be missing.</td>
+            <td>Add flex-wrap: wrap.</td>
+          </tr>
+          <tr>
+            <td>Spacing is uneven</td>
+            <td>Manual margins may conflict.</td>
+            <td>Use gap on the Flexbox container.</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+<section class="lesson-section">
+      <h2>Student Checklist</h2>
+      <p data-progress-label="lesson-7">0% complete</p>
+      <div class="progress" data-progress-for="lesson-7"><span></span></div>
+      <div data-checklist="lesson-7" style="margin-top:16px">
+        <label><input type='checkbox'> Understand the HTML focus.</label><br>
+<label><input type='checkbox'> Understand the CSS focus.</label><br>
+<label><input type='checkbox'> Understand the JavaScript focus.</label><br>
+<label><input type='checkbox'> Run or copy the HTML example.</label><br>
+<label><input type='checkbox'> Run or copy the CSS example.</label><br>
+<label><input type='checkbox'> Run or review the JavaScript example.</label><br>
+<label><input type='checkbox'> Complete the guided activity.</label><br>
+<label><input type='checkbox'> Finish the challenge.</label><br>
+      </div>
+    </section>
+
+    <section class="lesson-section" data-quiz>
+      <h2>Challenge</h2>
+      <p><strong>Which declaration activates Flexbox?</strong></p>
+      <button class='quiz-option' data-quiz-answer='true'>display: flex</button>
+<button class='quiz-option' data-quiz-answer='false'>font-size: flex</button>
+<button class='quiz-option' data-quiz-answer='false'>table: flex</button>
+      <p class="quiz-result"></p>
+    </section>
+
+    <section class="lesson-section">
+      <h2>Instructor Notes</h2>
+      <ul class="clean">
+        <li>Keep the teaching rule visible: HTML is structure, CSS is design, JavaScript is behavior.</li>
+        <li>Lesson 8 introduces JavaScript only as a small sneak peek using inline onclick examples.</li>
+        <li>From Lesson 9 onward, JavaScript becomes a full programming topic.</li>
+        <li>Encourage students to test often and explain what each line does in their own words.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Web Development Learning Portal · Lecture 7
+  </footer>
+
+  <script src="../assets/script.js"></script>
+</body>
+</html>

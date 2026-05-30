@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture 2: My Favorite Things</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+</head>
+<body>
+  <header class="lesson-hero">
+    <div class="header-inner">
+      <div class="breadcrumb"><a href="../index.html">Home</a> / Lecture 2</div>
+      <span class="badge">HTML Text + First CSS Styling</span>
+      <div class="lesson-title-row">
+        <h1>Lecture 2: My Favorite Things</h1>
+        <span class="suggested-total-badge"><span class="time-label">Estimated time</span><strong>80 min</strong></span>
+      </div>
+      <p>Use HTML text elements to structure content, then introduce the first CSS styling for colors, fonts, and spacing.</p>
+      <div class="header-actions">
+        <a class="btn btn-secondary" href="lesson-1.html">Previous</a>
+        <a class="btn btn-primary" href="#material">Start Lesson</a>
+        <a class="btn btn-secondary" href="lesson-3.html">Next</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="lesson-layout">
+    <section class="lesson-section" id="material">
+      <h2>Learning Objectives</h2>
+      <ul class="clean"><li>Use headings to organize page sections.</li>
+<li>Create paragraphs and lists.</li>
+<li>Use CSS to style headings and body text.</li>
+<li>Improve readability using margin, font size, and line height.</li></ul>
+
+      <div class="focus-box">
+        <div>
+          <h3>HTML Focus</h3>
+          <p>Headings, paragraphs, sections, ordered and unordered lists</p>
+        </div>
+        <div>
+          <h3>CSS Focus</h3>
+          <p>First CSS styling: background, colors, fonts, spacing, and headings</p>
+        </div>
+        <div>
+          <h3>JavaScript Focus</h3>
+          <p>Not introduced yet</p>
+        </div>
+      </div>
+
+      <div class="lesson-meta"><span class="pill hintable" tabindex="0" data-hint="HTML heading tags. h1 is most important; h6 is smallest.">h1-h6</span>
+<span class="pill hintable" tabindex="0" data-hint="Paragraph tag used for normal text.">p</span>
+<span class="pill hintable" tabindex="0" data-hint="Unordered list. Creates bullet points.">ul</span>
+<span class="pill hintable" tabindex="0" data-hint="Ordered list. Creates numbered items.">ol</span>
+<span class="pill hintable" tabindex="0" data-hint="List item used inside ul or ol.">li</span>
+<span class="pill hintable" tabindex="0" data-hint="CSS property that controls the typeface.">font-family</span>
+<span class="pill hintable" tabindex="0" data-hint="CSS property that controls text size.">font-size</span>
+<span class="pill hintable" tabindex="0" data-hint="CSS property that controls space between lines of text.">line-height</span>
+<span class="pill hintable" tabindex="0" data-hint="Space outside an element.">margin</span>
+<span class="pill hintable" tabindex="0" data-hint="HTML emphasis tag. It marks text that should be emphasized, usually shown in italic.">&lt;em&gt;</span></div>
+      <p class="hint-note">Hover over each concept pill to see a quick hint. You can also tab to a pill using the keyboard.</p>
+    </section>
+    <section class="lesson-section">
+      <h2>Flip Vocabulary Cards</h2>
+      <p>Click or hover each card to reveal the meaning.</p>
+      <div class="vocab-grid">
+        
+        
+        <button class="vocab-card" type="button" aria-label="Flip vocabulary card: Heading">
+          <span class="vocab-card-inner">
+            <span class="vocab-card-front">
+<strong>Heading</strong>
+</span>
+            <span class="vocab-card-back">
+              <small>Meaning</small>
+              <strong>Heading</strong>
+              <span>A title or section name, such as h1 or h2.</span>
+            </span>
+          </span>
+        </button>
+        
+        <button class="vocab-card" type="button" aria-label="Flip vocabulary card: Paragraph">
+          <span class="vocab-card-inner">
+            <span class="vocab-card-front">
+<strong>Paragraph</strong>
+</span>
+            <span class="vocab-card-back">
+              <small>Meaning</small>
+              <strong>Paragraph</strong>
+              <span>A block of normal text created with the p tag.</span>
+            </span>
+          </span>
+        </button>
+        
+        <button class="vocab-card" type="button" aria-label="Flip vocabulary card: List">
+          <span class="vocab-card-inner">
+            <span class="vocab-card-front">
+<strong>List</strong>
+</span>
+            <span class="vocab-card-back">
+              <small>Meaning</small>
+              <strong>List</strong>
+              <span>A group of related items.</span>
+            </span>
+          </span>
+        </button>
+        
+        <button class="vocab-card" type="button" aria-label="Flip vocabulary card: Line height">
+          <span class="vocab-card-inner">
+            <span class="vocab-card-front">
+<strong>Line height</strong>
+</span>
+            <span class="vocab-card-back">
+              <small>Meaning</small>
+              <strong>Line height</strong>
+              <span>The space between lines of text.</span>
+            </span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <section class="lesson-section">
+      <div class="safety-note">
+        <h3>Safety Note for Children</h3>
+        <p>This lesson may include personal text, images, or links. Keep your webpage safe.</p>
+        <ul>
+          <li>Do not put your home address, phone number, school address, or private personal details on a webpage.</li>
+<li>Use an avatar, drawing, icon, or safe sample image instead of a real personal photo unless an adult approves.</li>
+<li>Use copyright-safe images or images provided by the teacher.</li>
+<li>Ask an adult before publishing any webpage online.</li>
+<li>Be kind and respectful. Do not write content that could hurt, embarrass, or expose another person.</li>
+<li>Do not copy code from unknown websites without teacher guidance.</li>
+        </ul>
+      </div>
+    </section>
+<section class="lesson-section">
+      <h2>Training Material</h2>
+      <p>Each lesson separates structure, design, and interaction: HTML controls what is on the page, CSS controls how it looks, and JavaScript controls how it behaves.</p>
+      <div class="download-panel">
+        <h3>Download Training Files</h3>
+        <p>Download one ZIP file containing the HTML, CSS, and JavaScript examples for this lesson.</p>
+        <div class="download-actions">
+          <a class="download-btn" download href="../downloads/lesson-2/lesson-2-training-files.zip">Download Example</a>
+          <a class="download-btn worksheet-download" href="../worksheets/worksheet-2.html">Worksheet</a>
+        </div>
+      </div>
+
+      <div class="code-grid">
+        
+<div class="code-block">
+  <div class="code-title">
+    <span>HTML Example</span>
+    <button class="copy-btn" data-copy-target="html-code-2">Copy code</button>
+  </div>
+<pre><code id="html-code-2">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;My Favorite Things&lt;/title&gt;
+
+  &lt;!-- External CSS file --&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+
+  &lt;!-- External JS file --&gt;
+  &lt;script src=&quot;script.js&quot; defer&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;My Favorite Things&lt;/h1&gt;
+
+  &lt;p&gt;I &lt;em&gt;really enjoy&lt;/em&gt; learning new skills and building creative webpages.&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;Important:&lt;/strong&gt; HTML helps us organize content clearly.&lt;/p&gt;
+
+  &lt;h2&gt;Favorite Games&lt;/h2&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Minecraft&lt;/li&gt;
+    &lt;li&gt;Roblox&lt;/li&gt;
+    &lt;li&gt;Chess&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h2&gt;Top 5 Things I Want to Learn&lt;/h2&gt;
+  &lt;ol&gt;
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+    &lt;li&gt;Animation&lt;/li&gt;
+    &lt;li&gt;Game design&lt;/li&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+
+        
+<div class="code-block">
+  <div class="code-title">
+    <span>CSS Example</span>
+    <button class="copy-btn" data-copy-target="css-code-2">Copy code</button>
+  </div>
+  <pre><code id="css-code-2">body {
+  background-color: #f0f8ff;
+  color: #222222;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 30px;
+}
+
+h1 {
+  color: #4f46e5;
+  font-size: 40px;
+}
+
+h2 {
+  color: #0891b2;
+}</code></pre>
+</div>
+
+        
+<div class="code-block">
+  <div class="code-title">
+    <span>JavaScript Example</span>
+    <button class="copy-btn" data-copy-target="js-code-2">Copy code</button>
+  </div>
+  <pre><code id="js-code-2">// JavaScript starts later in the course.
+// This lesson introduces CSS styling with HTML content.</code></pre>
+</div>
+
+      </div>
+    </section>
+<section class="lesson-section">
+      <h2>Guided Activity</h2>
+      <div class="project-card">
+        <p><strong>Task:</strong> Create a My Favorite Things page with favorite foods, games, books, or hobbies. Style the text to make it easy and fun to read.</p>
+        <p><strong>Challenge:</strong> Create a Top 5 Things I Want to Learn list and style the section title.</p>
+      </div>
+    </section>
+    <section class="lesson-section" data-added="must-add-2">
+      <h2>Text Emphasis with <em></h2>
+      <p>Use <code>&lt;em&gt;</code> when you want to emphasize a word or phrase. Browsers usually display emphasized text in italic.</p>
+    </section>
+
+<section class="lesson-section">
+      <div class="build-steps">
+        <h3>Build Steps</h3>
+        <p>Follow these steps to complete the lesson in a clear order.</p>
+        <ol>
+          <li>Create a main heading for the page.</li>
+<li>Add sections using h2 headings.</li>
+<li>Write one paragraph about favorite things.</li>
+<li>Add an unordered list and an ordered list.</li>
+<li>Use CSS to style font, headings, margin, and line height.</li>
+<li>Refresh the browser and check readability.</li>
+        </ol>
+      </div>
+    </section>
+<section class="lesson-section">
+      <div class="try-change">
+        <h3>Try This Change</h3>
+        <p>Make one small change, refresh the page, and observe what happens.</p>
+        <ul class="try-list">
+          <li>Change the font size of h1 to 44px.</li>
+<li>Add another list called My Favorite Foods.</li>
+<li>Change the h2 color to a new color.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="lesson-section">
+      <div class="level-up">
+        <h3>Level Up Tasks</h3>
+        <p>Finished early? Try one of these extra challenges.</p>
+        <ul class="level-up-list">
+          <li>Create three sections: Games, Foods, and Skills.</li>
+<li>Use both an ordered list and unordered list on the same page.</li>
+<li>Add a class to one section and style it differently.</li>
+        </ul>
+      </div>
+    </section>
+
+<section class="lesson-section">
+      <div class="debug-corner">
+        <h3>Debugging Corner</h3>
+        <p>Use this checklist when something does not work as expected.</p>
+        <table class="debug-table">
+          <thead>
+            <tr>
+              <th>Problem</th>
+              <th>Possible Reason</th>
+              <th>Fix</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          <tr>
+            <td>List bullets look wrong</td>
+            <td>li tags may not be inside ul or ol.</td>
+            <td>Place every li inside a list container.</td>
+          </tr>
+          <tr>
+            <td>Text spacing feels crowded</td>
+            <td>line-height or margin may be too small.</td>
+            <td>Increase line-height or add margin.</td>
+          </tr>
+          <tr>
+            <td>Heading style does not apply</td>
+            <td>The CSS selector may not match the HTML tag.</td>
+            <td>Check that h1, h2, or class names are correct.</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+<section class="lesson-section">
+      <h2>Student Checklist</h2>
+      <p data-progress-label="lesson-2">0% complete</p>
+      <div class="progress" data-progress-for="lesson-2"><span></span></div>
+      <div data-checklist="lesson-2" style="margin-top:16px">
+        <label><input type='checkbox'> Understand the HTML focus.</label><br>
+<label><input type='checkbox'> Understand the CSS focus.</label><br>
+<label><input type='checkbox'> Understand the JavaScript focus.</label><br>
+<label><input type='checkbox'> Run or copy the HTML example.</label><br>
+<label><input type='checkbox'> Run or copy the CSS example.</label><br>
+<label><input type='checkbox'> Run or review the JavaScript example.</label><br>
+<label><input type='checkbox'> Complete the guided activity.</label><br>
+<label><input type='checkbox'> Finish the challenge.</label><br>
+      </div>
+    </section>
+
+    <section class="lesson-section" data-quiz>
+      <h2>Challenge</h2>
+      <p><strong>Which CSS property helps make lines of text easier to read?</strong></p>
+      <button class='quiz-option' data-quiz-answer='true'>line-height</button>
+<button class='quiz-option' data-quiz-answer='false'>table</button>
+<button class='quiz-option' data-quiz-answer='false'>href</button>
+      <p class="quiz-result"></p>
+    </section>
+
+    <section class="lesson-section">
+      <h2>Instructor Notes</h2>
+      <ul class="clean">
+        <li>Keep the teaching rule visible: HTML is structure, CSS is design, JavaScript is behavior.</li>
+        <li>Lesson 8 introduces JavaScript only as a small sneak peek using inline onclick examples.</li>
+        <li>From Lesson 9 onward, JavaScript becomes a full programming topic.</li>
+        <li>Encourage students to test often and explain what each line does in their own words.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Web Development Learning Portal · Lecture 2
+  </footer>
+
+  <script src="../assets/script.js"></script>
+</body>
+</html>

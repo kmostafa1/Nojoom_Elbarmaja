@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Script / Instructor Notes</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+</head>
+<body>
+  <header class="lesson-hero">
+    <div class="header-inner">
+      <div class="breadcrumb"><a href="../index.html">Home</a> / Teacher Script / Instructor Notes</div>
+      <span class="badge">Instructor Guide</span>
+      <h1>Teacher Script / Instructor Notes</h1>
+      <p>A practical delivery guide for instructors teaching the 12-lecture HTML, CSS, and JavaScript course.</p>
+      <div class="header-actions">
+        <a class="btn btn-primary" href="../index.html">Back to Home</a>
+        <a class="btn btn-secondary" href="../lessons/lesson-1.html">Start Lessons</a>
+        <a class="btn btn-secondary" href="#teacher-guide">Teacher Guide</a>
+        <a class="btn btn-secondary" href="#worksheets">Worksheets</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="guide-layout">
+    <section class="guide-section">
+      <h2>Teaching Rule</h2>
+      <div class="guide-card-grid">
+        <div class="guide-card">
+          <h3>HTML</h3>
+          <p><strong>Question:</strong> What is on the page?</p>
+          <p>Use HTML to explain structure: headings, paragraphs, images, buttons, lists, tables, cards, and app layout.</p>
+        </div>
+        <div class="guide-card">
+          <h3>CSS</h3>
+          <p><strong>Question:</strong> How does it look?</p>
+          <p>Use CSS to explain color, spacing, typography, layout, cards, Flexbox, and visual identity.</p>
+        </div>
+        <div class="guide-card">
+          <h3>JavaScript</h3>
+          <p><strong>Question:</strong> What happens when the user interacts?</p>
+          <p>Use JavaScript to explain clicks, variables, DOM changes, conditions, logic, and app behavior.</p>
+        </div>
+        <div class="guide-card">
+          <h3>Core Delivery Pattern</h3>
+          <p>Show the final result first, build it step by step, let students customize, then finish with a challenge.</p>
+        </div>
+      </div>
+    </section>
+
+
+      <section class="guide-section" id="teacher-guide">
+        <h2>Teacher Guide</h2>
+        <div class="grid two">
+          <div class="check-card">
+            <h3>Teaching Rule</h3>
+            <p><strong>HTML answers:</strong> What is on the page?</p>
+            <p><strong>CSS answers:</strong> How does it look?</p>
+            <p><strong>JavaScript answers:</strong> What happens when the user interacts?</p>
+          </div>
+          <div class="check-card">
+            <h3>JavaScript Timing</h3>
+            <p>Do not introduce JavaScript before Lesson 8. Lesson 8 uses only <code>onclick</code> alert and background color change. Full JavaScript starts in Lesson 9.</p>
+          </div>
+          <div class="check-card">
+            <h3>Recommended Class Flow</h3>
+            <ol>
+              <li>Show the final result.</li>
+              <li>Build the HTML structure.</li>
+              <li>Add CSS design.</li>
+              <li>Add JavaScript only when the lesson requires it.</li>
+              <li>End with a challenge.</li>
+            </ol>
+          </div>
+          <div class="check-card">
+            <h3>Next Version Suggestions</h3>
+            <ul>
+              <li>Achievement badges</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      
+
+    <section class="guide-section">
+      <h2>Opening Script</h2>
+      <div class="script-box">
+        <p><strong>Suggested wording:</strong></p>
+        <p>“Today we are learning how websites are built. HTML gives the page structure, CSS makes it look good, and JavaScript makes it respond when people click, type, or play with it. We will build small pieces first, then combine them into real projects.”</p>
+      </div>
+    </section>
+
+    <section class="guide-section">
+      <h2>Recommended Lesson Flow</h2>
+      <table class="guide-table">
+        <thead>
+          <tr>
+            <th>Stage</th>
+            <th>Instructor Action</th>
+            <th>Student Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Warm-up</td>
+            <td>Ask one review question from the previous lesson.</td>
+            <td>Answer verbally or point to code examples.</td>
+          </tr>
+          <tr>
+            <td>Preview</td>
+            <td>Show the final output before coding.</td>
+            <td>Identify what they will build.</td>
+          </tr>
+          <tr>
+            <td>Live coding</td>
+            <td>Code slowly and explain each line.</td>
+            <td>Follow along and ask questions.</td>
+          </tr>
+          <tr>
+            <td>Guided activity</td>
+            <td>Support students as they build the main task.</td>
+            <td>Complete and personalize the activity.</td>
+          </tr>
+          <tr>
+            <td>Try This Change</td>
+            <td>Encourage small experiments.</td>
+            <td>Modify one detail and observe the result.</td>
+          </tr>
+          <tr>
+            <td>Debugging</td>
+            <td>Use Debugging Corner instead of fixing the code immediately.</td>
+            <td>Compare the problem, reason, and fix.</td>
+          </tr>
+          <tr>
+            <td>Reflection</td>
+            <td>Ask what changed and why.</td>
+            <td>Explain what they learned in their own words.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="guide-section">
+      <h2>Lesson-by-Lesson Teaching Notes</h2>
+      <table class="guide-table">
+        <thead>
+          <tr>
+            <th>Lessons</th>
+            <th>Instructor Focus</th>
+            <th>Common Student Difficulty</th>
+            <th>Teaching Tip</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1–4</td>
+            <td>HTML structure with light CSS.</td>
+            <td>Missing closing tags, misplaced content, and unclear file structure.</td>
+            <td>Repeat: content must go inside body. Use indentation as a visual guide.</td>
+          </tr>
+          <tr>
+            <td>5–8</td>
+            <td>CSS design, Box Model, Flexbox, and creative cards.</td>
+            <td>Confusing margin and padding; Flexbox container versus items.</td>
+            <td>Use the “trading cards on a table” analogy for Flexbox.</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Only a JavaScript sneak peek.</td>
+            <td>Students may ask for full JavaScript explanation early.</td>
+            <td>Say: “This is a preview. We learn the real JavaScript system from Lesson 9.”</td>
+          </tr>
+          <tr>
+            <td>9–12</td>
+            <td>JavaScript variables, DOM, events, conditions, and apps.</td>
+            <td>Case-sensitive IDs, missing quotes, and logic errors.</td>
+            <td>Test after every small change and read error messages slowly.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="guide-section">
+      <h2>Classroom Management Tips</h2>
+      <div class="guide-card-grid">
+        <div class="guide-card">
+          <h3>For ages 10–12</h3>
+          <ul>
+            <li>Use starter files more often.</li>
+            <li>Keep typing sections short.</li>
+            <li>Pair students for debugging.</li>
+            <li>Give visual examples before code.</li>
+          </ul>
+        </div>
+        <div class="guide-card">
+          <h3>For ages 13–15</h3>
+          <ul>
+            <li>Give more independent challenge time.</li>
+            <li>Ask students to explain code behavior.</li>
+            <li>Use peer review for projects.</li>
+            <li>Encourage creative themes and extensions.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  <section class="guide-section" id="worksheets">
+        <h2>Downloadable Student Worksheets</h2>
+        <p>Each worksheet opens in the browser and includes a <strong>Print / Save as PDF</strong> button.</p>
+        <div class="grid three">
+          <div class="check-card"><h3>Lecture 1</h3><p>My First Webpage</p><a class="btn btn-dark" href="../worksheets/worksheet-1.html">Open Worksheet</a></div><div class="check-card"><h3>Lecture 2</h3><p>My Favorite Things</p><a class="btn btn-dark" href="../worksheets/worksheet-2.html">Open Worksheet</a></div><div class="check-card"><h3>Lecture 3</h3><p>Interactive Content: Images, Links, Buttons, and Tables</p><a class="btn btn-dark" href="../worksheets/worksheet-3.html">Open Worksheet</a></div><div class="check-card"><h3>Lecture 4</h3><p>Mini Project: All About Me</p><a class="btn btn-dark" href="../worksheets/worksheet-4.html">Open Worksheet</a></div><div class="check-card"><h3>Lecture 5</h3><p>Visual Identity: Colors, Backgrounds, and Typography</p><a class="btn btn-dark" href="../worksheets/worksheet-5.html">Open Worksheet</a></div><div class="check-card"><h3>Lecture 6</h3><p>Card Design with the CSS Box Model</p><a class="btn btn-dark" href="../worksheets/worksheet-6.html">Open Worksheet</a></div><div class="check-card"><h3>Lecture 7</h3><p>Flexbox Card Gallery</p><a class="btn btn-dark" href="../worksheets/worksheet-7.html">Open Worksheet</a></div><div class="check-card"><h3>Lecture 8</h3><p>CSS Project + JavaScript Sneak Peek</p><a class="btn btn-dark" href="../worksheets/worksheet-8.html">Open Worksheet</a></div><div class="check-card"><h3>Lecture 9</h3><p>JavaScript Fundamentals: Making Pages Think</p><a class="btn btn-dark" href="../worksheets/worksheet-9.html">Open Worksheet</a></div><div class="check-card"><h3>Lecture 10</h3><p>DOM Manipulation and Button Events</p><a class="btn btn-dark" href="../worksheets/worksheet-10.html">Open Worksheet</a></div><div class="check-card"><h3>Lecture 11</h3><p>Control Flow and Logic Apps</p><a class="btn btn-dark" href="../worksheets/worksheet-11.html">Open Worksheet</a></div><div class="check-card"><h3>Lecture 12</h3><p>Final Interactive App Challenge</p><a class="btn btn-dark" href="../worksheets/worksheet-12.html">Open Worksheet</a></div>
+        </div>
+      </section>
+  </main>
+
+  <footer class="footer">Teacher Script / Instructor Notes · Web Development Learning Portal</footer>
+  <script src="../assets/script.js"></script>
+</body>
+</html>

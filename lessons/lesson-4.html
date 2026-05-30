@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture 4: Mini Project: All About Me</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+</head>
+<body>
+  <header class="lesson-hero">
+    <div class="header-inner">
+      <div class="breadcrumb"><a href="../index.html">Home</a> / Lecture 4</div>
+      <span class="badge">HTML Project + Simple Personal Theme</span>
+      <div class="lesson-title-row">
+        <h1>Lecture 4: Mini Project: All About Me</h1>
+        <span class="suggested-total-badge"><span class="time-label">Estimated time</span><strong>90 min</strong></span>
+      </div>
+      <p>Build a complete personal webpage using HTML and apply a simple CSS theme.</p>
+      <div class="header-actions">
+        <a class="btn btn-secondary" href="lesson-3.html">Previous</a>
+        <a class="btn btn-primary" href="#material">Start Lesson</a>
+        <a class="btn btn-secondary" href="lesson-5.html">Next</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="lesson-layout">
+    <section class="lesson-section" id="material">
+      <h2>Learning Objectives</h2>
+      <ul class="clean"><li>Combine headings, paragraphs, lists, tables, images, links, and buttons.</li>
+<li>Create a complete page titled All About Me.</li>
+<li>Apply a simple personal color theme.</li>
+<li>Review code organization and indentation.</li></ul>
+
+      <div class="focus-box">
+        <div>
+          <h3>HTML Focus</h3>
+          <p>Complete personal webpage structure</p>
+        </div>
+        <div>
+          <h3>CSS Focus</h3>
+          <p>Simple personal theme with colors, spacing, and readable typography</p>
+        </div>
+        <div>
+          <h3>JavaScript Focus</h3>
+          <p>Not introduced yet</p>
+        </div>
+      </div>
+
+      <div class="lesson-meta"><span class="pill hintable" tabindex="0" data-hint="A full webpage file with doctype, html, head, title, and body.">Complete HTML document</span>
+<span class="pill hintable" tabindex="0" data-hint="Semantic HTML element used to group related content.">section</span>
+<span class="pill hintable" tabindex="0" data-hint="Unordered list. Creates bullet points.">ul</span>
+<span class="pill hintable" tabindex="0" data-hint="HTML element for information arranged in rows and columns.">table</span>
+<span class="pill hintable" tabindex="0" data-hint="HTML image tag. Adds a picture to the page.">img</span>
+<span class="pill hintable" tabindex="0" data-hint="Clickable HTML element. CSS styles it; JavaScript can make it do actions.">button</span>
+<span class="pill hintable" tabindex="0" data-hint="A small group of colors used consistently across a design.">color scheme</span>
+<span class="pill hintable" tabindex="0" data-hint="The visual style of text: font, size, weight, and spacing.">typography</span>
+<span class="pill hintable" tabindex="0" data-hint="Using margin, padding, and gap to create clean layout distance.">spacing</span>
+<span class="pill hintable" tabindex="0" data-hint="Semantic HTML element for a group of navigation links.">&lt;nav&gt;</span>
+<span class="pill hintable" tabindex="0" data-hint="Semantic HTML element used to group media such as an image with its caption.">&lt;figure&gt;</span>
+<span class="pill hintable" tabindex="0" data-hint="Caption text for a figure, usually explaining an image.">&lt;figcaption&gt;</span></div>
+      <p class="hint-note">Hover over each concept pill to see a quick hint. You can also tab to a pill using the keyboard.</p>
+    </section>
+    <section class="lesson-section">
+      <h2>Flip Vocabulary Cards</h2>
+      <p>Click or hover each card to reveal the meaning.</p>
+      <div class="vocab-grid">
+        
+        
+        <button class="vocab-card" type="button" aria-label="Flip vocabulary card: Project page">
+          <span class="vocab-card-inner">
+            <span class="vocab-card-front">
+<strong>Project page</strong>
+</span>
+            <span class="vocab-card-back">
+              <small>Meaning</small>
+              <strong>Project page</strong>
+              <span>A complete webpage that combines several learned skills.</span>
+            </span>
+          </span>
+        </button>
+        
+        <button class="vocab-card" type="button" aria-label="Flip vocabulary card: Section">
+          <span class="vocab-card-inner">
+            <span class="vocab-card-front">
+<strong>Section</strong>
+</span>
+            <span class="vocab-card-back">
+              <small>Meaning</small>
+              <strong>Section</strong>
+              <span>A grouped part of a webpage, such as hobbies or schedule.</span>
+            </span>
+          </span>
+        </button>
+        
+        <button class="vocab-card" type="button" aria-label="Flip vocabulary card: Theme">
+          <span class="vocab-card-inner">
+            <span class="vocab-card-front">
+<strong>Theme</strong>
+</span>
+            <span class="vocab-card-back">
+              <small>Meaning</small>
+              <strong>Theme</strong>
+              <span>A consistent design style using colors and fonts.</span>
+            </span>
+          </span>
+        </button>
+        
+        <button class="vocab-card" type="button" aria-label="Flip vocabulary card: Indentation">
+          <span class="vocab-card-inner">
+            <span class="vocab-card-front">
+<strong>Indentation</strong>
+</span>
+            <span class="vocab-card-back">
+              <small>Meaning</small>
+              <strong>Indentation</strong>
+              <span>Spaces used to make code easier to read.</span>
+            </span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <section class="lesson-section">
+      <div class="safety-note">
+        <h3>Safety Note for Children</h3>
+        <p>This lesson includes a personal webpage, so privacy is very important.</p>
+        <ul>
+          <li>Do not put your home address, phone number, school address, or private personal details on a webpage.</li>
+<li>Use an avatar, drawing, icon, or safe sample image instead of a real personal photo unless an adult approves.</li>
+<li>Use copyright-safe images or images provided by the teacher.</li>
+<li>Ask an adult before publishing any webpage online.</li>
+<li>Be kind and respectful. Do not write content that could hurt, embarrass, or expose another person.</li>
+<li>Do not copy code from unknown websites without teacher guidance.</li>
+        </ul>
+      </div>
+    </section>
+<section class="lesson-section">
+      <h2>Training Material</h2>
+      <p>Each lesson separates structure, design, and interaction: HTML controls what is on the page, CSS controls how it looks, and JavaScript controls how it behaves.</p>
+      <div class="download-panel">
+        <h3>Download Training Files</h3>
+        <p>Download one ZIP file containing the HTML, CSS, and JavaScript examples for this lesson.</p>
+        <div class="download-actions">
+          <a class="download-btn" download href="../downloads/lesson-4/lesson-4-training-files.zip">Download Example</a>
+          <a class="download-btn worksheet-download" href="../worksheets/worksheet-4.html">Worksheet</a>
+        </div>
+      </div>
+
+      <div class="code-grid">
+        
+<div class="code-block">
+  <div class="code-title">
+    <span>HTML Example</span>
+    <button class="copy-btn" data-copy-target="html-code-4">Copy code</button>
+  </div>
+<pre><code id="html-code-4">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;All About Me&lt;/title&gt;
+
+  &lt;!-- External CSS file --&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+
+  &lt;!-- External JS file --&gt;
+  &lt;script src=&quot;script.js&quot; defer&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;All About Me&lt;/h1&gt;
+
+  &lt;nav&gt;
+    &lt;a href=&quot;#intro&quot;&gt;Introduction&lt;/a&gt;
+    &lt;a href=&quot;#hobbies&quot;&gt;Hobbies&lt;/a&gt;
+    &lt;a href=&quot;#activities&quot;&gt;Activities&lt;/a&gt;
+  &lt;/nav&gt;
+
+  &lt;figure&gt;
+    &lt;img src=&quot;images/profile.png&quot; alt=&quot;Profile avatar&quot; width=&quot;180&quot;&gt;
+    &lt;figcaption&gt;My safe profile avatar for this webpage.&lt;/figcaption&gt;
+  &lt;/figure&gt;
+
+  &lt;h2 id=&quot;intro&quot;&gt;Introduction&lt;/h2&gt;
+  &lt;p&gt;Hello! My name is Kareem. I am learning how to build websites.&lt;/p&gt;
+
+  &lt;h2 id=&quot;hobbies&quot;&gt;My Hobbies&lt;/h2&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Football&lt;/li&gt;
+    &lt;li&gt;Gaming&lt;/li&gt;
+    &lt;li&gt;Reading&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;h2 id=&quot;activities&quot;&gt;My Weekly Activities&lt;/h2&gt;
+  &lt;table&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Day&lt;/th&gt;
+      &lt;th&gt;Activity&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Monday&lt;/td&gt;
+      &lt;td&gt;Sports&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+
+  &lt;a href=&quot;https://www.wikipedia.org&quot;&gt;Visit Wikipedia&lt;/a&gt;
+  &lt;button&gt;Say Hello!&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+
+        
+<div class="code-block">
+  <div class="code-title">
+    <span>CSS Example</span>
+    <button class="copy-btn" data-copy-target="css-code-4">Copy code</button>
+  </div>
+  <pre><code id="css-code-4">/* Optional improvements */
+h2 {
+  color: #0891b2;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #999;
+  padding: 8px;
+}
+
+nav {
+  margin: 20px 0;
+}
+
+nav a {
+  margin-right: 12px;
+  color: #312e81;
+  font-weight: bold;
+}
+
+figure {
+  margin: 20px 0;
+  text-align: center;
+}
+
+figcaption {
+  color: #667085;
+  font-size: 14px;
+  margin-top: 8px;
+}
+</code></pre>
+</div>
+
+        
+<div class="code-block">
+  <div class="code-title">
+    <span>JavaScript Example</span>
+    <button class="copy-btn" data-copy-target="js-code-4">Copy code</button>
+  </div>
+  <pre><code id="js-code-4">// JavaScript is not used in this project yet.</code></pre>
+</div>
+
+      </div>
+    </section>
+<section class="lesson-section">
+      <h2>Guided Activity</h2>
+      <div class="project-card">
+        <p><strong>Task:</strong> Build an All About Me webpage with an introduction, hobbies, weekly activities, favorite website, image/avatar, and button.</p>
+        <p><strong>Challenge:</strong> Add extra sections: My Dream Job, My Superpower, or Places I Want to Visit.</p>
+      </div>
+    </section>
+    <section class="lesson-section" data-added="must-add-4">
+      <h2>Navigation with <nav></h2>
+      <p>Use <code>&lt;nav&gt;</code> to group important page links. In this lesson, navigation links jump to sections on the same page.</p>
+    </section>
+    <section class="lesson-section" data-added="must-add-figure-lesson4">
+      <h2>Image Captions with Figure</h2>
+      <p>Use <code>&lt;figure&gt;</code> to group an image with its caption. Use <code>&lt;figcaption&gt;</code> to describe the image. This fits well in the All About Me project because the avatar image has a clear caption.</p>
+    </section>
+
+
+<section class="lesson-section">
+      <div class="build-steps">
+        <h3>Build Steps</h3>
+        <p>Follow these steps to complete the lesson in a clear order.</p>
+        <ol>
+          <li>Plan the sections of the All About Me page.</li>
+<li>Build the HTML structure with heading, introduction, hobbies, table, link, and button.</li>
+<li>Add safe personal content without private details.</li>
+<li>Apply a simple CSS theme with colors and spacing.</li>
+<li>Check that the page is organized and readable.</li>
+<li>Review the project using the rubric.</li>
+        </ol>
+      </div>
+    </section>
+<section class="lesson-section">
+      <div class="try-change">
+        <h3>Try This Change</h3>
+        <p>Make one small change, refresh the page, and observe what happens.</p>
+        <ul class="try-list">
+          <li>Add a new section called My Dream Job.</li>
+<li>Style the table with a different border color.</li>
+<li>Change the button text and color.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="lesson-section">
+      <div class="level-up">
+        <h3>Level Up Tasks</h3>
+        <p>Finished early? Try one of these extra challenges.</p>
+        <ul class="level-up-list">
+          <li>Add a personal theme such as space, sports, fantasy, or gaming.</li>
+<li>Add a safe avatar image instead of a personal photo.</li>
+<li>Create a navigation area that links to sections on the same page.</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="lesson-section">
+      <div class="rubric-box">
+        <h3>Project Rubric: All About Me</h3>
+        <p>Use this rubric to review the personal webpage project.</p>
+        <table class="rubric-table">
+          <thead>
+            <tr>
+              <th>Skill</th>
+              <th>Excellent</th>
+              <th>Good</th>
+              <th>Needs Practice</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          <tr>
+            <td>HTML structure</td>
+            <td>Complete structure with clear sections</td>
+            <td>Mostly complete with minor issues</td>
+            <td>Missing important structure</td>
+          </tr>
+          <tr>
+            <td>Content organization</td>
+            <td>Introduction, hobbies, schedule, link, and button are clear</td>
+            <td>Most required content is present</td>
+            <td>Content is incomplete or hard to follow</td>
+          </tr>
+          <tr>
+            <td>CSS theme</td>
+            <td>Consistent colors, readable text, and good spacing</td>
+            <td>Some styling is applied</td>
+            <td>Little or no styling</td>
+          </tr>
+          <tr>
+            <td>Safety</td>
+            <td>Uses safe personal information and safe images</td>
+            <td>Mostly safe with minor concerns</td>
+            <td>Includes private or risky information</td>
+          </tr>
+          <tr>
+            <td>Creativity</td>
+            <td>Personal, original, and engaging</td>
+            <td>Some customization</td>
+            <td>Very basic</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+<section class="lesson-section">
+      <div class="debug-corner">
+        <h3>Debugging Corner</h3>
+        <p>Use this checklist when something does not work as expected.</p>
+        <table class="debug-table">
+          <thead>
+            <tr>
+              <th>Problem</th>
+              <th>Possible Reason</th>
+              <th>Fix</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          <tr>
+            <td>Page looks unorganized</td>
+            <td>Sections may not be separated clearly.</td>
+            <td>Use headings and spacing for each section.</td>
+          </tr>
+          <tr>
+            <td>Table borders missing</td>
+            <td>CSS border may not be applied to th and td.</td>
+            <td>Style both th and td elements.</td>
+          </tr>
+          <tr>
+            <td>Button looks plain</td>
+            <td>Button CSS may be missing.</td>
+            <td>Add padding, background color, and border-radius.</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+<section class="lesson-section">
+      <h2>Student Checklist</h2>
+      <p data-progress-label="lesson-4">0% complete</p>
+      <div class="progress" data-progress-for="lesson-4"><span></span></div>
+      <div data-checklist="lesson-4" style="margin-top:16px">
+        <label><input type='checkbox'> Understand the HTML focus.</label><br>
+<label><input type='checkbox'> Understand the CSS focus.</label><br>
+<label><input type='checkbox'> Understand the JavaScript focus.</label><br>
+<label><input type='checkbox'> Run or copy the HTML example.</label><br>
+<label><input type='checkbox'> Run or copy the CSS example.</label><br>
+<label><input type='checkbox'> Run or review the JavaScript example.</label><br>
+<label><input type='checkbox'> Complete the guided activity.</label><br>
+<label><input type='checkbox'> Finish the challenge.</label><br>
+      </div>
+    </section>
+
+    <section class="lesson-section" data-quiz>
+      <h2>Challenge</h2>
+      <p><strong>What is the main project in this lecture?</strong></p>
+      <button class='quiz-option' data-quiz-answer='true'>All About Me</button>
+<button class='quiz-option' data-quiz-answer='false'>Online Store</button>
+<button class='quiz-option' data-quiz-answer='false'>Calculator App</button>
+      <p class="quiz-result"></p>
+    </section>
+
+    <section class="lesson-section">
+      <h2>Instructor Notes</h2>
+      <ul class="clean">
+        <li>Keep the teaching rule visible: HTML is structure, CSS is design, JavaScript is behavior.</li>
+        <li>Lesson 8 introduces JavaScript only as a small sneak peek using inline onclick examples.</li>
+        <li>From Lesson 9 onward, JavaScript becomes a full programming topic.</li>
+        <li>Encourage students to test often and explain what each line does in their own words.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Web Development Learning Portal · Lecture 4
+  </footer>
+
+  <script src="../assets/script.js"></script>
+</body>
+</html>

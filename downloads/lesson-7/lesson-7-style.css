@@ -1,0 +1,22 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+.card {
+  width: 240px;
+  padding: 20px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+}

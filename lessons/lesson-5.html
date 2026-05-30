@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture 5: Visual Identity: Colors, Backgrounds, and Typography</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+</head>
+<body>
+  <header class="lesson-hero">
+    <div class="header-inner">
+      <div class="breadcrumb"><a href="../index.html">Home</a> / Lecture 5</div>
+      <span class="badge">CSS-led + Project Enhancement</span>
+      <div class="lesson-title-row">
+        <h1>Lecture 5: Visual Identity: Colors, Backgrounds, and Typography</h1>
+        <span class="suggested-total-badge"><span class="time-label">Estimated time</span><strong>80 min</strong></span>
+      </div>
+      <p>Upgrade the All About Me project with stronger colors, typography, backgrounds, and visual identity.</p>
+      <div class="header-actions">
+        <a class="btn btn-secondary" href="lesson-4.html">Previous</a>
+        <a class="btn btn-primary" href="#material">Start Lesson</a>
+        <a class="btn btn-secondary" href="lesson-6.html">Next</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="lesson-layout">
+    <section class="lesson-section" id="material">
+      <h2>Learning Objectives</h2>
+      <ul class="clean"><li>Choose a consistent color palette.</li>
+<li>Use typography to create personality.</li>
+<li>Style backgrounds and text for readability.</li>
+<li>Improve an existing HTML project without changing its structure too much.</li></ul>
+
+      <div class="focus-box">
+        <div>
+          <h3>HTML Focus</h3>
+          <p>Reuse existing project sections</p>
+        </div>
+        <div>
+          <h3>CSS Focus</h3>
+          <p>Color schemes, backgrounds, typography, readability</p>
+        </div>
+        <div>
+          <h3>JavaScript Focus</h3>
+          <p>Not introduced yet</p>
+        </div>
+      </div>
+
+      <div class="lesson-meta"><span class="pill hintable" tabindex="0" data-hint="A small group of colors used consistently across a design.">color scheme</span>
+<span class="pill hintable" tabindex="0" data-hint="CSS background styling, such as color, image, or gradient.">background</span>
+<span class="pill hintable" tabindex="0" data-hint="CSS property that controls the typeface.">font-family</span>
+<span class="pill hintable" tabindex="0" data-hint="CSS property that controls text size.">font-size</span>
+<span class="pill hintable" tabindex="0" data-hint="CSS property that controls text thickness.">font-weight</span>
+<span class="pill hintable" tabindex="0" data-hint="CSS property that aligns text left, right, center, or justify.">text-align</span>
+<span class="pill hintable" tabindex="0" data-hint="CSS property that controls space between letters.">letter-spacing</span>
+<span class="pill hintable" tabindex="0" data-hint="CSS property that controls space between lines of text.">line-height</span>
+<span class="pill hintable" tabindex="0" data-hint="CSS property that limits how wide an element can grow.">max-width</span></div>
+      <p class="hint-note">Hover over each concept pill to see a quick hint. You can also tab to a pill using the keyboard.</p>
+    </section>
+    <section class="lesson-section">
+      <h2>Flip Vocabulary Cards</h2>
+      <p>Click or hover each card to reveal the meaning.</p>
+      <div class="vocab-grid">
+        
+        
+        <button class="vocab-card" type="button" aria-label="Flip vocabulary card: Color palette">
+          <span class="vocab-card-inner">
+            <span class="vocab-card-front">
+<strong>Color palette</strong>
+</span>
+            <span class="vocab-card-back">
+              <small>Meaning</small>
+              <strong>Color palette</strong>
+              <span>A small set of colors used consistently in a design.</span>
+            </span>
+          </span>
+        </button>
+        
+        <button class="vocab-card" type="button" aria-label="Flip vocabulary card: Typography">
+          <span class="vocab-card-inner">
+            <span class="vocab-card-front">
+<strong>Typography</strong>
+</span>
+            <span class="vocab-card-back">
+              <small>Meaning</small>
+              <strong>Typography</strong>
+              <span>The style and appearance of text.</span>
+            </span>
+          </span>
+        </button>
+        
+        <button class="vocab-card" type="button" aria-label="Flip vocabulary card: Background">
+          <span class="vocab-card-inner">
+            <span class="vocab-card-front">
+<strong>Background</strong>
+</span>
+            <span class="vocab-card-back">
+              <small>Meaning</small>
+              <strong>Background</strong>
+              <span>The area behind content on a page.</span>
+            </span>
+          </span>
+        </button>
+        
+        <button class="vocab-card" type="button" aria-label="Flip vocabulary card: Visual identity">
+          <span class="vocab-card-inner">
+            <span class="vocab-card-front">
+<strong>Visual identity</strong>
+</span>
+            <span class="vocab-card-back">
+              <small>Meaning</small>
+              <strong>Visual identity</strong>
+              <span>The overall look and personality of a page.</span>
+            </span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <section class="lesson-section">
+      <div class="safety-note">
+        <h3>Safety Note for Children</h3>
+        <p>This lesson may include personal text, images, or links. Keep your webpage safe.</p>
+        <ul>
+          <li>Do not put your home address, phone number, school address, or private personal details on a webpage.</li>
+<li>Use an avatar, drawing, icon, or safe sample image instead of a real personal photo unless an adult approves.</li>
+<li>Use copyright-safe images or images provided by the teacher.</li>
+<li>Ask an adult before publishing any webpage online.</li>
+<li>Be kind and respectful. Do not write content that could hurt, embarrass, or expose another person.</li>
+<li>Do not copy code from unknown websites without teacher guidance.</li>
+        </ul>
+      </div>
+    </section>
+<section class="lesson-section">
+      <h2>Training Material</h2>
+      <p>Each lesson separates structure, design, and interaction: HTML controls what is on the page, CSS controls how it looks, and JavaScript controls how it behaves.</p>
+      <div class="download-panel">
+        <h3>Download Training Files</h3>
+        <p>Download one ZIP file containing the HTML, CSS, and JavaScript examples for this lesson.</p>
+        <div class="download-actions">
+          <a class="download-btn" download href="../downloads/lesson-5/lesson-5-training-files.zip">Download Example</a>
+          <a class="download-btn worksheet-download" href="../worksheets/worksheet-5.html">Worksheet</a>
+        </div>
+      </div>
+
+      <div class="code-grid">
+        
+<div class="code-block">
+  <div class="code-title">
+    <span>HTML Example</span>
+    <button class="copy-btn" data-copy-target="html-code-5">Copy code</button>
+  </div>
+<pre><code id="html-code-5">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Visual Identity Page&lt;/title&gt;
+
+  &lt;!-- External CSS file --&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+
+  &lt;!-- External JS file --&gt;
+  &lt;script src=&quot;script.js&quot; defer&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;All About Me&lt;/h1&gt;
+    &lt;p&gt;Welcome to my personal webpage.&lt;/p&gt;
+  &lt;/header&gt;
+
+  &lt;section&gt;
+    &lt;h2&gt;My Hobbies&lt;/h2&gt;
+    &lt;p&gt;I enjoy football, games, and learning new skills.&lt;/p&gt;
+  &lt;/section&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+
+        
+<div class="code-block">
+  <div class="code-title">
+    <span>CSS Example</span>
+    <button class="copy-btn" data-copy-target="css-code-5">Copy code</button>
+  </div>
+  <pre><code id="css-code-5">body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #dbeafe, #ede9fe);
+  color: #222222;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #312e81;
+  color: white;
+}
+
+section {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 42px;
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}</code></pre>
+</div>
+
+        
+<div class="code-block">
+  <div class="code-title">
+    <span>JavaScript Example</span>
+    <button class="copy-btn" data-copy-target="js-code-5">Copy code</button>
+  </div>
+  <pre><code id="js-code-5">// This lesson focuses on visual design with CSS.</code></pre>
+</div>
+
+      </div>
+    </section>
+<section class="lesson-section">
+      <h2>Guided Activity</h2>
+      <div class="project-card">
+        <p><strong>Task:</strong> Redesign the All About Me project using one theme: space, fantasy book, sports, or gaming.</p>
+        <p><strong>Challenge:</strong> Create three theme palettes and choose the strongest one.</p>
+      </div>
+    </section>
+    <section class="lesson-section" data-added="must-add-5">
+      <h2>Readable Width with max-width</h2>
+      <p>Use <code>max-width</code> to stop content from becoming too wide on large screens. This makes text easier to read.</p>
+    </section>
+
+<section class="lesson-section">
+      <div class="build-steps">
+        <h3>Build Steps</h3>
+        <p>Follow these steps to complete the lesson in a clear order.</p>
+        <ol>
+          <li>Choose a theme such as space, fantasy, sports, or gaming.</li>
+<li>Select a small color palette.</li>
+<li>Style the page background and header area.</li>
+<li>Improve typography using font size, line height, and letter spacing.</li>
+<li>Check contrast and readability.</li>
+<li>Compare the page before and after styling.</li>
+        </ol>
+      </div>
+    </section>
+<section class="lesson-section">
+      <div class="try-change">
+        <h3>Try This Change</h3>
+        <p>Make one small change, refresh the page, and observe what happens.</p>
+        <ul class="try-list">
+          <li>Create a space theme using dark blue and white.</li>
+<li>Try a fantasy theme using purple and gold.</li>
+<li>Change letter spacing and compare the result.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="lesson-section">
+      <div class="level-up">
+        <h3>Level Up Tasks</h3>
+        <p>Finished early? Try one of these extra challenges.</p>
+        <ul class="level-up-list">
+          <li>Create two different color palettes and compare them.</li>
+<li>Use a gradient background.</li>
+<li>Create a dark-mode version of the same design.</li>
+        </ul>
+      </div>
+    </section>
+
+<section class="lesson-section">
+      <div class="debug-corner">
+        <h3>Debugging Corner</h3>
+        <p>Use this checklist when something does not work as expected.</p>
+        <table class="debug-table">
+          <thead>
+            <tr>
+              <th>Problem</th>
+              <th>Possible Reason</th>
+              <th>Fix</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          <tr>
+            <td>Colors do not match</td>
+            <td>Too many unrelated colors may be used.</td>
+            <td>Choose 3–5 colors and reuse them.</td>
+          </tr>
+          <tr>
+            <td>Text is hard to read</td>
+            <td>Color contrast may be too low.</td>
+            <td>Use dark text on light backgrounds or light text on dark backgrounds.</td>
+          </tr>
+          <tr>
+            <td>Background overwhelms content</td>
+            <td>The background may be too strong.</td>
+            <td>Use softer colors or add a white content panel.</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+<section class="lesson-section">
+      <h2>Student Checklist</h2>
+      <p data-progress-label="lesson-5">0% complete</p>
+      <div class="progress" data-progress-for="lesson-5"><span></span></div>
+      <div data-checklist="lesson-5" style="margin-top:16px">
+        <label><input type='checkbox'> Understand the HTML focus.</label><br>
+<label><input type='checkbox'> Understand the CSS focus.</label><br>
+<label><input type='checkbox'> Understand the JavaScript focus.</label><br>
+<label><input type='checkbox'> Run or copy the HTML example.</label><br>
+<label><input type='checkbox'> Run or copy the CSS example.</label><br>
+<label><input type='checkbox'> Run or review the JavaScript example.</label><br>
+<label><input type='checkbox'> Complete the guided activity.</label><br>
+<label><input type='checkbox'> Finish the challenge.</label><br>
+      </div>
+    </section>
+
+    <section class="lesson-section" data-quiz>
+      <h2>Challenge</h2>
+      <p><strong>What is a color scheme?</strong></p>
+      <button class='quiz-option' data-quiz-answer='true'>A consistent group of colors used in a design</button>
+<button class='quiz-option' data-quiz-answer='false'>A table row</button>
+<button class='quiz-option' data-quiz-answer='false'>A type of image file</button>
+      <p class="quiz-result"></p>
+    </section>
+
+    <section class="lesson-section">
+      <h2>Instructor Notes</h2>
+      <ul class="clean">
+        <li>Keep the teaching rule visible: HTML is structure, CSS is design, JavaScript is behavior.</li>
+        <li>Lesson 8 introduces JavaScript only as a small sneak peek using inline onclick examples.</li>
+        <li>From Lesson 9 onward, JavaScript becomes a full programming topic.</li>
+        <li>Encourage students to test often and explain what each line does in their own words.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Web Development Learning Portal · Lecture 5
+  </footer>
+
+  <script src="../assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture 11: Control Flow and Logic Apps</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+</head>
+<body>
+  <header class="lesson-hero">
+    <div class="header-inner">
+      <div class="breadcrumb"><a href="../index.html">Home</a> / Lecture 11</div>
+      <span class="badge">JavaScript-led Logic</span>
+      <div class="lesson-title-row">
+        <h1>Lecture 11: Control Flow and Logic Apps</h1>
+        <span class="suggested-total-badge"><span class="time-label">Estimated time</span><strong>85 min</strong></span>
+      </div>
+      <p>Use if, else if, and else to build logical applications including a counter and a number guessing game.</p>
+      <div class="header-actions">
+        <a class="btn btn-secondary" href="lesson-10.html">Previous</a>
+        <a class="btn btn-primary" href="#material">Start Lesson</a>
+        <a class="btn btn-secondary" href="lesson-12.html">Next</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="lesson-layout">
+    <section class="lesson-section" id="material">
+      <h2>Learning Objectives</h2>
+      <ul class="clean"><li>Use comparison operators such as ===, &gt;, and &lt;.</li>
+<li>Write if, else if, and else statements.</li>
+<li>Make an app respond differently based on user input.</li>
+<li>Build a digital counter.</li>
+<li>Build a number guessing game.</li></ul>
+
+      <div class="focus-box">
+        <div>
+          <h3>HTML Focus</h3>
+          <p>Inputs, buttons, counters, and result areas</p>
+        </div>
+        <div>
+          <h3>CSS Focus</h3>
+          <p>Simple app styling for readability</p>
+        </div>
+        <div>
+          <h3>JavaScript Focus</h3>
+          <p>if/else, comparison operators, logical decision-making, counter logic, guessing game logic</p>
+        </div>
+      </div>
+
+      <div class="lesson-meta"><span class="pill hintable js" tabindex="0" data-hint="Runs code only when a condition is true.">if</span>
+<span class="pill hintable js" tabindex="0" data-hint="Checks another condition if the first one is false.">else if</span>
+<span class="pill hintable js" tabindex="0" data-hint="Runs code when previous conditions are false.">else</span>
+<span class="pill hintable" tabindex="0" data-hint="Checking values using ===, &gt;, &lt;, &gt;=, or &lt;=.">comparison</span>
+<span class="pill hintable" tabindex="0" data-hint="JavaScript function that converts a value into a number.">Number</span>
+<span class="pill hintable" tabindex="0" data-hint="The value typed inside an input field.">input.value</span>
+<span class="pill hintable" tabindex="0" data-hint="An app that increases, decreases, or resets a number.">counter</span>
+<span class="pill hintable" tabindex="0" data-hint="A logic game where the user guesses a hidden number.">guessing game</span>
+<span class="pill hintable" tabindex="0" data-hint="HTML element used to collect user input.">&lt;form&gt;</span>
+<span class="pill hintable" tabindex="0" data-hint="Text label connected to an input. It improves accessibility and usability.">&lt;label&gt;</span>
+<span class="pill hintable" tabindex="0" data-hint="HTML form control for user data such as text or numbers.">&lt;input&gt;</span></div>
+      <p class="hint-note">Hover over each concept pill to see a quick hint. You can also tab to a pill using the keyboard.</p>
+    </section>
+    <section class="lesson-section">
+      <h2>Flip Vocabulary Cards</h2>
+      <p>Click or hover each card to reveal the meaning.</p>
+      <div class="vocab-grid">
+        
+        
+        <button class="vocab-card" type="button" aria-label="Flip vocabulary card: Condition">
+          <span class="vocab-card-inner">
+            <span class="vocab-card-front">
+<strong>Condition</strong>
+</span>
+            <span class="vocab-card-back">
+              <small>Meaning</small>
+              <strong>Condition</strong>
+              <span>A rule that can be true or false.</span>
+            </span>
+          </span>
+        </button>
+        
+        <button class="vocab-card" type="button" aria-label="Flip vocabulary card: if">
+          <span class="vocab-card-inner">
+            <span class="vocab-card-front">
+<strong>if</strong>
+</span>
+            <span class="vocab-card-back">
+              <small>Meaning</small>
+              <strong>if</strong>
+              <span>Runs code when a condition is true.</span>
+            </span>
+          </span>
+        </button>
+        
+        <button class="vocab-card" type="button" aria-label="Flip vocabulary card: else">
+          <span class="vocab-card-inner">
+            <span class="vocab-card-front">
+<strong>else</strong>
+</span>
+            <span class="vocab-card-back">
+              <small>Meaning</small>
+              <strong>else</strong>
+              <span>Runs code when the condition is false.</span>
+            </span>
+          </span>
+        </button>
+        
+        <button class="vocab-card" type="button" aria-label="Flip vocabulary card: Comparison">
+          <span class="vocab-card-inner">
+            <span class="vocab-card-front">
+<strong>Comparison</strong>
+</span>
+            <span class="vocab-card-back">
+              <small>Meaning</small>
+              <strong>Comparison</strong>
+              <span>Checking values using symbols like ===, &gt;, or &lt;.</span>
+            </span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <section class="lesson-section">
+      <div class="safety-note">
+        <h3>Safety Note for Children</h3>
+        <p>This lesson uses JavaScript. Only run code you understand or code provided by your teacher.</p>
+        <ul>
+          <li>Do not put your home address, phone number, school address, or private personal details on a webpage.</li>
+<li>Use an avatar, drawing, icon, or safe sample image instead of a real personal photo unless an adult approves.</li>
+<li>Use copyright-safe images or images provided by the teacher.</li>
+<li>Ask an adult before publishing any webpage online.</li>
+<li>Be kind and respectful. Do not write content that could hurt, embarrass, or expose another person.</li>
+<li>Do not copy code from unknown websites without teacher guidance.</li>
+        </ul>
+      </div>
+    </section>
+<section class="lesson-section">
+      <h2>Training Material</h2>
+      <p>Each lesson separates structure, design, and interaction: HTML controls what is on the page, CSS controls how it looks, and JavaScript controls how it behaves.</p>
+      <div class="download-panel">
+        <h3>Download Training Files</h3>
+        <p>Download one ZIP file containing the HTML, CSS, and JavaScript examples for this lesson.</p>
+        <div class="download-actions">
+          <a class="download-btn" download href="../downloads/lesson-11/lesson-11-training-files.zip">Download Example</a>
+          <a class="download-btn worksheet-download" href="../worksheets/worksheet-11.html">Worksheet</a>
+        </div>
+      </div>
+
+      <div class="code-grid">
+        
+<div class="code-block">
+  <div class="code-title">
+    <span>HTML Example</span>
+    <button class="copy-btn" data-copy-target="html-code-11">Copy code</button>
+  </div>
+<pre><code id="html-code-11">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Number Guessing Game&lt;/title&gt;
+
+  &lt;!-- External CSS file --&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+
+  &lt;!-- External JS file --&gt;
+  &lt;script src=&quot;script.js&quot; defer&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Number Guessing Game&lt;/h1&gt;
+  &lt;p&gt;Guess a number between 1 and 10.&lt;/p&gt;
+
+  &lt;form id=&quot;guessForm&quot;&gt;
+    &lt;label for=&quot;guessInput&quot;&gt;Enter your guess:&lt;/label&gt;
+    &lt;input id=&quot;guessInput&quot; type=&quot;number&quot;&gt;
+    &lt;button id=&quot;guessButton&quot; type=&quot;submit&quot;&gt;Guess&lt;/button&gt;
+  &lt;/form&gt;
+
+  &lt;p id=&quot;result&quot;&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+
+        
+<div class="code-block">
+  <div class="code-title">
+    <span>CSS Example</span>
+    <button class="copy-btn" data-copy-target="css-code-11">Copy code</button>
+  </div>
+  <pre><code id="css-code-11">body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f8fafc;
+  padding: 40px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input, button {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 6px;
+}</code></pre>
+</div>
+
+        
+<div class="code-block">
+  <div class="code-title">
+    <span>JavaScript Example</span>
+    <button class="copy-btn" data-copy-target="js-code-11">Copy code</button>
+  </div>
+  <pre><code id="js-code-11">let secretNumber = 7;
+
+const form = document.getElementById(&quot;guessForm&quot;);
+const input = document.getElementById(&quot;guessInput&quot;);
+const result = document.getElementById(&quot;result&quot;);
+
+form.addEventListener(&quot;submit&quot;, function(event) {
+  event.preventDefault();
+
+  let guess = Number(input.value);
+
+  if (guess === secretNumber) {
+    result.textContent = &quot;Correct! You guessed the number!&quot;;
+    result.style.color = &quot;green&quot;;
+  } else if (guess &gt; secretNumber) {
+    result.textContent = &quot;Too high! Try again.&quot;;
+    result.style.color = &quot;orange&quot;;
+  } else {
+    result.textContent = &quot;Too low! Try again.&quot;;
+    result.style.color = &quot;blue&quot;;
+  }
+});</code></pre>
+</div>
+
+      </div>
+    </section>
+<section class="lesson-section">
+      <h2>Guided Activity</h2>
+      <div class="project-card">
+        <p><strong>Task:</strong> Build a digital counter with increase, decrease, and reset buttons. Then build a number guessing game.</p>
+        <p><strong>Challenge:</strong> Add color feedback to the counter and attempts to the guessing game.</p>
+      </div>
+    </section>
+    <section class="lesson-section" data-added="must-add-11">
+      <h2>Accessible Forms</h2>
+      <p>Use <code>&lt;form&gt;</code> to group user input, <code>&lt;label&gt;</code> to describe the input, and <code>&lt;input&gt;</code> to collect the user's answer.</p>
+    </section>
+
+<section class="lesson-section">
+      <div class="build-steps">
+        <h3>Build Steps</h3>
+        <p>Follow these steps to complete the lesson in a clear order.</p>
+        <ol>
+          <li>Create the app layout with input, buttons, and result area.</li>
+<li>Create JavaScript variables for app data.</li>
+<li>Read user input using input.value.</li>
+<li>Convert input to a number when needed.</li>
+<li>Use if, else if, and else to make decisions.</li>
+<li>Test different cases and fix logic errors.</li>
+        </ol>
+      </div>
+    </section>
+<section class="lesson-section">
+      <div class="try-change">
+        <h3>Try This Change</h3>
+        <p>Make one small change, refresh the page, and observe what happens.</p>
+        <ul class="try-list">
+          <li>Change the secret number.</li>
+<li>Add a message when the guess is empty.</li>
+<li>Add a maximum number of attempts.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="lesson-section">
+      <div class="level-up">
+        <h3>Level Up Tasks</h3>
+        <p>Finished early? Try one of these extra challenges.</p>
+        <ul class="level-up-list">
+          <li>Add a counter color rule for positive, negative, and zero.</li>
+<li>Add limited attempts to the number guessing game.</li>
+<li>Add a message when the input is empty.</li>
+        </ul>
+      </div>
+    </section>
+
+<section class="lesson-section">
+      <div class="debug-corner">
+        <h3>Debugging Corner</h3>
+        <p>Use this checklist when something does not work as expected.</p>
+        <table class="debug-table">
+          <thead>
+            <tr>
+              <th>Problem</th>
+              <th>Possible Reason</th>
+              <th>Fix</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          <tr>
+            <td>Guess is always wrong</td>
+            <td>Input value may be text, not a number.</td>
+            <td>Use Number(input.value).</td>
+          </tr>
+          <tr>
+            <td>Condition never runs</td>
+            <td>Comparison operator may be wrong.</td>
+            <td>Use === for exact comparison.</td>
+          </tr>
+          <tr>
+            <td>Counter display does not update</td>
+            <td>The variable changed but the page text did not.</td>
+            <td>Update countText.textContent after changing count.</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+<section class="lesson-section">
+      <h2>Student Checklist</h2>
+      <p data-progress-label="lesson-11">0% complete</p>
+      <div class="progress" data-progress-for="lesson-11"><span></span></div>
+      <div data-checklist="lesson-11" style="margin-top:16px">
+        <label><input type='checkbox'> Understand the HTML focus.</label><br>
+<label><input type='checkbox'> Understand the CSS focus.</label><br>
+<label><input type='checkbox'> Understand the JavaScript focus.</label><br>
+<label><input type='checkbox'> Run or copy the HTML example.</label><br>
+<label><input type='checkbox'> Run or copy the CSS example.</label><br>
+<label><input type='checkbox'> Run or review the JavaScript example.</label><br>
+<label><input type='checkbox'> Complete the guided activity.</label><br>
+<label><input type='checkbox'> Finish the challenge.</label><br>
+      </div>
+    </section>
+
+    <section class="lesson-section" data-quiz>
+      <h2>Challenge</h2>
+      <p><strong>Which structure helps a program make decisions?</strong></p>
+      <button class='quiz-option' data-quiz-answer='true'>if / else</button>
+<button class='quiz-option' data-quiz-answer='false'>h1 / p</button>
+<button class='quiz-option' data-quiz-answer='false'>padding / margin</button>
+      <p class="quiz-result"></p>
+    </section>
+
+    <section class="lesson-section">
+      <h2>Instructor Notes</h2>
+      <ul class="clean">
+        <li>Keep the teaching rule visible: HTML is structure, CSS is design, JavaScript is behavior.</li>
+        <li>Lesson 8 introduces JavaScript only as a small sneak peek using inline onclick examples.</li>
+        <li>From Lesson 9 onward, JavaScript becomes a full programming topic.</li>
+        <li>Encourage students to test often and explain what each line does in their own words.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Web Development Learning Portal · Lecture 11
+  </footer>
+
+  <script src="../assets/script.js"></script>
+</body>
+</html>

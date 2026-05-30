@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture 8: CSS Project + JavaScript Sneak Peek</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+</head>
+<body>
+  <header class="lesson-hero">
+    <div class="header-inner">
+      <div class="breadcrumb"><a href="../index.html">Home</a> / Lecture 8</div>
+      <span class="badge">Full CSS Project + JS Preview</span>
+      <div class="lesson-title-row">
+        <h1>Lecture 8: CSS Project + JavaScript Sneak Peek</h1>
+        <span class="suggested-total-badge"><span class="time-label">Estimated time</span><strong>90 min</strong></span>
+      </div>
+      <p>Build a polished card-based webpage, then add two simple JavaScript preview interactions.</p>
+      <div class="header-actions">
+        <a class="btn btn-secondary" href="lesson-7.html">Previous</a>
+        <a class="btn btn-primary" href="#material">Start Lesson</a>
+        <a class="btn btn-secondary" href="lesson-9.html">Next</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="lesson-layout">
+    <section class="lesson-section" id="material">
+      <h2>Learning Objectives</h2>
+      <ul class="clean"><li>Create a complete themed card webpage.</li>
+<li>Use a consistent color scheme and typography.</li>
+<li>Use Box Model and Flexbox together.</li>
+<li>Add simple hover effects for user engagement.</li>
+<li>Preview JavaScript using onclick alert and background color change.</li></ul>
+
+      <div class="focus-box">
+        <div>
+          <h3>HTML Focus</h3>
+          <p>Complete card page structure with buttons</p>
+        </div>
+        <div>
+          <h3>CSS Focus</h3>
+          <p>Visual identity, Box Model, Flexbox, hover effects, reusable CSS</p>
+        </div>
+        <div>
+          <h3>JavaScript Focus</h3>
+          <p>Only two previews: onclick alert and onclick background color change</p>
+        </div>
+      </div>
+
+      <div class="lesson-meta"><span class="pill hintable" tabindex="0" data-hint="A consistent look created using color, typography, spacing, and style.">Visual identity</span>
+<span class="pill hintable" tabindex="0" data-hint="Original themed cards based on characters, games, books, or items.">Creative cards</span>
+<span class="pill hintable" tabindex="0" data-hint="CSS classes used repeatedly to keep code clean and consistent.">Reusable classes</span>
+<span class="pill hintable" tabindex="0" data-hint="Style changes that happen when the mouse moves over an element.">Hover effects</span>
+<span class="pill hintable" tabindex="0" data-hint="CSS property that makes style changes animate smoothly.">transition</span>
+<span class="pill hintable" tabindex="0" data-hint="CSS property that adds shadow behind an element.">box-shadow</span>
+<span class="pill hintable js" tabindex="0" data-hint="An HTML event attribute that runs JavaScript when an element is clicked.">onclick</span>
+<span class="pill hintable js" tabindex="0" data-hint="A JavaScript command that shows a popup message.">alert</span>
+<span class="pill hintable" tabindex="0" data-hint="JavaScript that changes the page body background color.">document.body.style.backgroundColor</span></div>
+      <p class="hint-note">Hover over each concept pill to see a quick hint. You can also tab to a pill using the keyboard.</p>
+    </section>
+    <section class="lesson-section">
+      <h2>Flip Vocabulary Cards</h2>
+      <p>Click or hover each card to reveal the meaning.</p>
+      <div class="vocab-grid">
+        
+        
+        <button class="vocab-card" type="button" aria-label="Flip vocabulary card: onclick">
+          <span class="vocab-card-inner">
+            <span class="vocab-card-front">
+<strong>onclick</strong>
+</span>
+            <span class="vocab-card-back">
+              <small>Meaning</small>
+              <strong>onclick</strong>
+              <span>An HTML attribute that runs JavaScript when clicked.</span>
+            </span>
+          </span>
+        </button>
+        
+        <button class="vocab-card" type="button" aria-label="Flip vocabulary card: alert">
+          <span class="vocab-card-inner">
+            <span class="vocab-card-front">
+<strong>alert</strong>
+</span>
+            <span class="vocab-card-back">
+              <small>Meaning</small>
+              <strong>alert</strong>
+              <span>A JavaScript popup message.</span>
+            </span>
+          </span>
+        </button>
+        
+        <button class="vocab-card" type="button" aria-label="Flip vocabulary card: Hover effect">
+          <span class="vocab-card-inner">
+            <span class="vocab-card-front">
+<strong>Hover effect</strong>
+</span>
+            <span class="vocab-card-back">
+              <small>Meaning</small>
+              <strong>Hover effect</strong>
+              <span>A style change that happens when the mouse moves over an element.</span>
+            </span>
+          </span>
+        </button>
+        
+        <button class="vocab-card" type="button" aria-label="Flip vocabulary card: Sneak peek">
+          <span class="vocab-card-inner">
+            <span class="vocab-card-front">
+<strong>Sneak peek</strong>
+</span>
+            <span class="vocab-card-back">
+              <small>Meaning</small>
+              <strong>Sneak peek</strong>
+              <span>A small preview of a topic before learning it fully.</span>
+            </span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <section class="lesson-section">
+      <div class="safety-note">
+        <h3>Safety Note for Children</h3>
+        <p>This lesson may use characters, games, books, and images. Keep content safe and respectful.</p>
+        <ul>
+          <li>Do not put your home address, phone number, school address, or private personal details on a webpage.</li>
+<li>Use an avatar, drawing, icon, or safe sample image instead of a real personal photo unless an adult approves.</li>
+<li>Use copyright-safe images or images provided by the teacher.</li>
+<li>Ask an adult before publishing any webpage online.</li>
+<li>Be kind and respectful. Do not write content that could hurt, embarrass, or expose another person.</li>
+<li>Do not copy code from unknown websites without teacher guidance.</li>
+        </ul>
+      </div>
+    </section>
+<section class="lesson-section">
+      <h2>Training Material</h2>
+      <p>Each lesson separates structure, design, and interaction: HTML controls what is on the page, CSS controls how it looks, and JavaScript controls how it behaves.</p>
+      <div class="download-panel">
+        <h3>Download Training Files</h3>
+        <p>Download one ZIP file containing the HTML, CSS, and JavaScript examples for this lesson.</p>
+        <div class="download-actions">
+          <a class="download-btn" download href="../downloads/lesson-8/lesson-8-training-files.zip">Download Example</a>
+          <a class="download-btn worksheet-download" href="../worksheets/worksheet-8.html">Worksheet</a>
+        </div>
+      </div>
+
+      <div class="code-grid">
+        
+<div class="code-block">
+  <div class="code-title">
+    <span>HTML Example</span>
+    <button class="copy-btn" data-copy-target="html-code-8">Copy code</button>
+  </div>
+<pre><code id="html-code-8">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Creative Character Cards&lt;/title&gt;
+
+  &lt;!-- External CSS file --&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+
+  &lt;!-- External JS file --&gt;
+  &lt;script src=&quot;script.js&quot; defer&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Creative Character Cards&lt;/h1&gt;
+    &lt;p&gt;Meet my favorite characters from games and stories.&lt;/p&gt;
+  &lt;/header&gt;
+
+  &lt;button onclick=&quot;document.body.style.backgroundColor=&#x27;lightyellow&#x27;&quot;&gt;
+    Change Background
+  &lt;/button&gt;
+
+  &lt;main class=&quot;card-container&quot;&gt;
+    &lt;section class=&quot;card&quot;&gt;
+      &lt;div class=&quot;card-icon&quot;&gt;🐉&lt;/div&gt;
+      &lt;h2&gt;Fire Dragon&lt;/h2&gt;
+      &lt;p&gt;A powerful dragon that guards the mountain castle.&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;Power:&lt;/strong&gt; Fire Breath&lt;/p&gt;
+      &lt;button onclick=&quot;alert(&#x27;You selected the Fire Dragon!&#x27;)&quot;&gt;
+        Choose Dragon
+      &lt;/button&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+
+        
+<div class="code-block">
+  <div class="code-title">
+    <span>CSS Example</span>
+    <button class="copy-btn" data-copy-target="css-code-8">Copy code</button>
+  </div>
+  <pre><code id="css-code-8">.card {
+  width: 250px;
+  padding: 24px;
+  border-radius: 20px;
+  background-color: white;
+  border: 2px solid #ddd;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 12px;
+  background-color: #312e81;
+  color: white;
+  cursor: pointer;
+}</code></pre>
+</div>
+
+        
+<div class="code-block">
+  <div class="code-title">
+    <span>JavaScript Example</span>
+    <button class="copy-btn" data-copy-target="js-code-8">Copy code</button>
+  </div>
+  <pre><code id="js-code-8">&lt;!-- JavaScript sneak peek is written inline in the button --&gt;
+
+&lt;button onclick=&quot;alert(&#x27;You selected the Fire Dragon!&#x27;)&quot;&gt;
+  Choose Dragon
+&lt;/button&gt;
+
+&lt;button onclick=&quot;document.body.style.backgroundColor=&#x27;lightyellow&#x27;&quot;&gt;
+  Change Background
+&lt;/button&gt;</code></pre>
+</div>
+
+      </div>
+    </section>
+<section class="lesson-section">
+      <h2>Guided Activity</h2>
+      <div class="project-card">
+        <p><strong>Task:</strong> Create a Creative Character Cards page with at least four cards. Add one button that shows an alert and one button that changes the page background color.</p>
+        <p><strong>Challenge:</strong> Add the JavaScript sneak peek without changing the main CSS project structure.</p>
+      </div>
+    </section>
+<section class="lesson-section">
+      <div class="build-steps">
+        <h3>Build Steps</h3>
+        <p>Follow these steps to complete the lesson in a clear order.</p>
+        <ol>
+          <li>Build the complete creative card page structure.</li>
+<li>Add at least four themed cards.</li>
+<li>Apply the full CSS card design with hover effects.</li>
+<li>Add one onclick alert button.</li>
+<li>Add one onclick background color change button.</li>
+<li>Test both JavaScript preview interactions.</li>
+        </ol>
+      </div>
+    </section>
+<section class="lesson-section">
+      <div class="try-change">
+        <h3>Try This Change</h3>
+        <p>Make one small change, refresh the page, and observe what happens.</p>
+        <ul class="try-list">
+          <li>Change the alert message for each character.</li>
+<li>Add another button that changes the background to lightblue.</li>
+<li>Create one card button that says Selected! using onclick.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="lesson-section">
+      <div class="level-up">
+        <h3>Level Up Tasks</h3>
+        <p>Finished early? Try one of these extra challenges.</p>
+        <ul class="level-up-list">
+          <li>Add one alert message for each character card.</li>
+<li>Add one button that changes the background to a theme color.</li>
+<li>Add a selected state by changing button text with onclick.</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="lesson-section">
+      <div class="rubric-box">
+        <h3>Project Rubric: Creative Character Cards</h3>
+        <p>Use this rubric to review the card design project with JavaScript sneak peek.</p>
+        <table class="rubric-table">
+          <thead>
+            <tr>
+              <th>Skill</th>
+              <th>Excellent</th>
+              <th>Good</th>
+              <th>Needs Practice</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          <tr>
+            <td>Card structure</td>
+            <td>At least four well-organized cards</td>
+            <td>Cards are present with minor issues</td>
+            <td>Cards are missing or incomplete</td>
+          </tr>
+          <tr>
+            <td>CSS design</td>
+            <td>Strong visual identity, consistent colors, and readable typography</td>
+            <td>Good styling with small inconsistencies</td>
+            <td>Weak or incomplete styling</td>
+          </tr>
+          <tr>
+            <td>Box Model and Flexbox</td>
+            <td>Cards have good spacing and responsive layout</td>
+            <td>Layout mostly works</td>
+            <td>Layout is broken or unclear</td>
+          </tr>
+          <tr>
+            <td>JavaScript sneak peek</td>
+            <td>Alert and background color buttons both work</td>
+            <td>One interaction works</td>
+            <td>Interactions are missing or broken</td>
+          </tr>
+          <tr>
+            <td>Originality</td>
+            <td>Theme feels creative and engaging</td>
+            <td>Some original ideas</td>
+            <td>Very basic or copied</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+<section class="lesson-section">
+      <div class="debug-corner">
+        <h3>Debugging Corner</h3>
+        <p>Use this checklist when something does not work as expected.</p>
+        <table class="debug-table">
+          <thead>
+            <tr>
+              <th>Problem</th>
+              <th>Possible Reason</th>
+              <th>Fix</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          <tr>
+            <td>Alert does not show</td>
+            <td>onclick syntax may have missing quotes.</td>
+            <td>Use alert(&#x27;Message&#x27;) with quotes around the message.</td>
+          </tr>
+          <tr>
+            <td>Background does not change</td>
+            <td>JavaScript property may be misspelled.</td>
+            <td>Use document.body.style.backgroundColor.</td>
+          </tr>
+          <tr>
+            <td>Card button style changed unexpectedly</td>
+            <td>Button CSS may affect all buttons.</td>
+            <td>Use a specific selector such as .card button.</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+<section class="lesson-section">
+      <h2>Student Checklist</h2>
+      <p data-progress-label="lesson-8">0% complete</p>
+      <div class="progress" data-progress-for="lesson-8"><span></span></div>
+      <div data-checklist="lesson-8" style="margin-top:16px">
+        <label><input type='checkbox'> Understand the HTML focus.</label><br>
+<label><input type='checkbox'> Understand the CSS focus.</label><br>
+<label><input type='checkbox'> Understand the JavaScript focus.</label><br>
+<label><input type='checkbox'> Run or copy the HTML example.</label><br>
+<label><input type='checkbox'> Run or copy the CSS example.</label><br>
+<label><input type='checkbox'> Run or review the JavaScript example.</label><br>
+<label><input type='checkbox'> Complete the guided activity.</label><br>
+<label><input type='checkbox'> Finish the challenge.</label><br>
+      </div>
+    </section>
+
+    <section class="lesson-section" data-quiz>
+      <h2>Challenge</h2>
+      <p><strong>Which onclick example shows a popup message?</strong></p>
+      <button class='quiz-option' data-quiz-answer='true'>onclick=&quot;alert(&#x27;Hello!&#x27;)&quot;</button>
+<button class='quiz-option' data-quiz-answer='false'>onclick=&quot;font-size: 20px&quot;</button>
+<button class='quiz-option' data-quiz-answer='false'>onclick=&quot;table row&quot;</button>
+      <p class="quiz-result"></p>
+    </section>
+
+    <section class="lesson-section">
+      <h2>Instructor Notes</h2>
+      <ul class="clean">
+        <li>Keep the teaching rule visible: HTML is structure, CSS is design, JavaScript is behavior.</li>
+        <li>Lesson 8 introduces JavaScript only as a small sneak peek using inline onclick examples.</li>
+        <li>From Lesson 9 onward, JavaScript becomes a full programming topic.</li>
+        <li>Encourage students to test often and explain what each line does in their own words.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Web Development Learning Portal · Lecture 8
+  </footer>
+
+  <script src="../assets/script.js"></script>
+</body>
+</html>
